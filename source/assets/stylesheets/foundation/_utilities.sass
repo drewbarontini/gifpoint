@@ -1,0 +1,199 @@
+// *************************************
+//
+//   Utilities
+//   -> Global utilities
+//
+// *************************************
+
+// ----- Clearfix ----- //
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &:before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// -------------------------------------
+//   Background
+// -------------------------------------
+
+.bcb
+  background: $c-base
+.bch
+  background: $c-highlight
+.bci
+  background: $c-invert
+.bcs
+  background: $c-subdue
+
+// -------------------------------------
+//   Display
+// -------------------------------------
+
+.db
+  display: block
+.di
+  display: inline
+.dib
+  display: inline-block
+.dn
+  display: none
+
+// -------------------------------------
+//   Margins
+// -------------------------------------
+
+// ----- Bottom ----- //
+
+.mbf
+  margin-bottom: 0
+.mbxs
+  margin-bottom: 0.25 * $b-whitespace
+.mbs
+  margin-bottom: 0.5 * $b-whitespace
+.mbm
+  margin-bottom: $b-whitespace
+.mbl
+  margin-bottom: 2 * $b-whitespace
+
+// ----- Horizontal ----- //
+
+.mhc
+  margin-left: auto
+  margin-right: auto
+
+// ----- Left ----- //
+
+.mlf
+  margin-left: 0
+.mls
+  margin-left: 0.5 * $b-whitespace
+.mlm
+  margin-left: $b-whitespace
+
+// ----- Right ----- //
+
+.mrf
+  margin-right: 0
+.mrs
+  margin-right: 0.5 * $b-whitespace
+.mrm
+  margin-right: $b-whitespace
+
+// ----- Top ----- //
+
+.mtf
+  margin-top: 0
+.mts
+  margin-top: 0.5 * $b-whitespace
+.mtm
+  margin-top: $b-whitespace
+.mtl
+  margin-top: 2 * $b-whitespace
+
+// -------------------------------------
+//   Positioning
+// -------------------------------------
+
+.fl
+  float: left
+.fr
+  float: right
+
+.poa
+  position: absolute
+.pof
+  position: fixed
+.por
+  position: relative
+.pos
+  position: static
+
+// -------------------------------------
+//   Rounding
+// -------------------------------------
+
+.ra
+  border-radius: 50%
+.ram
+  border-radius: $b-borderRadius
+
+// -------------------------------------
+//   Text
+// -------------------------------------
+
+// ----- Alignment ----- //
+
+.tac
+  text-align: center
+
+// ----- Color ----- //
+
+.tcb
+  color: $c-base
+.tch
+  color: $c-highlight
+.tci
+  color: $c-invert
+.tcs
+  color: $c-subdue
+
+// ----- Family ----- //
+
+.tfb
+  font-family: $f-base
+.tfh
+  font-family: $f-header
+
+// ----- Size ----- //
+
+.tsxs
+  font-size: 60%
+.tss
+  font-size: 75%
+.tsm
+  font-size: 85%
+.tsl
+  font-size: 105%
+.tsxl
+  font-size: 115%
+
+// ----- Style ----- //
+
+.tsi
+  font-style: italic
+
+// ----- Transform ----- //
+
+.ttu
+  text-transform: uppercase
+
+// ----- Weight ----- //
+
+.twn
+  font-weight: normal
+.twb
+  font-weight: bold

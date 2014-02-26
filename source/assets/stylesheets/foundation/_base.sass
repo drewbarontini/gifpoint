@@ -1,0 +1,57 @@
+// *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// *************************************
+
+html
+  @extend .tfb
+  @extend .tcb
+  background: $c-background
+  font-size: $b-fontSize
+  line-height: $b-lineHeight
+
+body
+  font-size: 100%
+
+// -------------------------------------
+//   Block Content
+// -------------------------------------
+
+ul, p
+  @extend .mbm
+  @extend .mtf
+
+li
+  @extend .mbs
+  @extend .mtf
+
+// ----- Headers ----- //
+
+h1, .h1,
+h2, .h2
+  @extend .mbxs
+  @extend .mtf
+  @extend .tfh
+  @extend .twb
+  line-height: 1.2
+
+h1, .h1
+  font-size: 200%
+
+h2, .h2
+  font-size: 150%
+
+// -------------------------------------
+//   Inline Content
+// -------------------------------------
+
+a
+  @extend .tch
+  border-bottom: $b-border
+  text-decoration: none
+  &:hover,
+  &:focus
+    @extend .tcs
+    border-bottom-color: $c-highlight
