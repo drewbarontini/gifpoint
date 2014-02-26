@@ -1,0 +1,2 @@
+@presenter = angular.module('Presenter', [])
+

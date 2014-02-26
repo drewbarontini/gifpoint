@@ -13,8 +13,24 @@
   background-position: center
   background-size: cover
   height: 100%
+  overflow: hidden
   width: 100%
   z-index: 10
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Dark ----- //
+
+.slide.slide--dark
+  @extend .bcb
+
+// ----- Light ----- //
+
+.slide.slide--light
+  @extend .bci
+  @extend .tcb
 
 // -------------------------------------
 //   States
@@ -34,4 +50,9 @@
 .slide-content
   @extend .mal
   @extend .stretch
+
+// ----- Image ----- //
+
+.slide-img
+  @extend .ram
 

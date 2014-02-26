@@ -17,14 +17,8 @@
     element.css('background-image', "url(#{attrs.img})")
 
     scope.nextSlide = () ->
-      unless element.next() == undefined
+      unless element.next().length == 0
         slidesCtrl.updateProgress(element)
-        element.addClass('is-lastActive').next().addClass('is-active')
-      return
-
-    scope.previousSlide = () ->
-      unless element.prev() == undefined
-        slidesCtrl.updateProgress(element)
-        element.addClass('is-lastActive').prev().addClass('is-active')
+        element.removeClass('is-active').next().addClass('is-active')
       return
 
