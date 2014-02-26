@@ -1,5 +1,4 @@
-@presenter.directive 'progress', () ->
-  controller: 'SlidesCtrl'
+@presenter.directive 'progress', (Progress) ->
   restrict: 'E'
   replace: true
   scope: {}
@@ -12,4 +11,8 @@
 
   link: (scope, element, attrs) ->
 
-    element.css('width', scope.progress())
+    Progress.registerProgress (val) ->
+      element.css('width', "#{val * 100}%")
+
+    scope.$on '$destroy', () ->
+      Progress.registerProgress(null)

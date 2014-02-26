@@ -1,5 +1,5 @@
 @presenter.directive 'slide', () ->
-  controller: 'SlidesCtrl'
+  require: '^slides'
   restrict: 'E'
   replace: true
   scope: {}
@@ -11,11 +11,14 @@
     </div>
   """
 
-  link: (scope, element, attrs) ->
+  link: (scope, element, attrs, slidesCtrl) ->
+
+    slidesCtrl.registerSlide(element)
 
     scope.nextSlide = () ->
       unless element.next() == undefined
-        element.removeClass().addClass('is-lastActive').next().addClass('is-active')
-      @
+        slidesCtrl.updateProgress(element)
+        element.addClass('is-lastActive').next().addClass('is-active')
+      return
 
     element.css('background-image', "url(#{attrs.img})")
