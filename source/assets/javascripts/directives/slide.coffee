@@ -14,6 +14,7 @@
   link: (scope, element, attrs, slidesCtrl) ->
 
     slidesCtrl.registerSlide(element)
+    element.css('background-image', "url(#{attrs.img})")
 
     scope.nextSlide = () ->
       unless element.next() == undefined
@@ -21,4 +22,9 @@
         element.addClass('is-lastActive').next().addClass('is-active')
       return
 
-    element.css('background-image', "url(#{attrs.img})")
+    scope.previousSlide = () ->
+      unless element.prev() == undefined
+        slidesCtrl.updateProgress(element)
+        element.addClass('is-lastActive').prev().addClass('is-active')
+      return
+
