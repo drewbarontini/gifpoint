@@ -5,6 +5,13 @@
 //
 // *************************************
 
+// ----- Bottom ----- //
+
+.bottom
+  bottom: 0
+  left: 0
+  position: absolute
+
 // ----- Clearfix ----- //
 
 .group::after
@@ -24,6 +31,22 @@
   text-overflow: ellipsis
   white-space: nowrap
 
+// ----- Faux Hide ----- //
+
+.fauxHide
+  height: 0
+  opacity: 0
+  overflow: hidden
+  visibility: hidden
+
+// ----- Faux Show ----- //
+
+.fauxShow
+  height: auto
+  opacity: 1
+  overflow: visible
+  visibility: visible
+
 // ----- Image Replacement ----- //
 
 .ir
@@ -35,6 +58,30 @@
     display: block
     width: 0
     height: 150%
+
+// ----- Middle ----- //
+
+.middle
+  +transform(translate(-50%, -50%))
+  left: 50%
+  position: absolute
+  top: 50%
+
+// ----- Stretch ----- //
+
+.stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+// ----- Valign ----- //
+
+.valign
+  +transform(translateY(-50%))
+  position: relative
+  top: 50%
 
 // -------------------------------------
 //   Background
@@ -65,6 +112,15 @@
 // -------------------------------------
 //   Margins
 // -------------------------------------
+
+// ----- All ----- //
+
+.mas
+  margin: 0.5 * $b-whitespace
+.mam
+  margin: $b-whitespace
+.mal
+  margin: 2 * $b-whitespace
 
 // ----- Bottom ----- //
 

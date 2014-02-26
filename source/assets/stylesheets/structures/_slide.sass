@@ -1,0 +1,37 @@
+// *************************************
+//
+//   Slide
+//   -> Description
+//
+// *************************************
+
+.slide
+  @extend .fauxHide
+  @extend .stretch
+  @extend .tci
+  background-color: $c-highlight
+  background-position: center
+  background-size: cover
+  height: 100%
+  width: 100%
+  z-index: 10
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// ----- Active ----- //
+
+.slide.is-active
+  @extend .fauxShow
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Content ----- //
+
+.slide-content
+  @extend .mal
+  @extend .stretch
+
