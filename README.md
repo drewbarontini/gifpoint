@@ -1,2 +1,3 @@
-# Middleman, Angular-powered HTML slides
+# Presenter
+Middleman, Angular-powered HTML slides
 
