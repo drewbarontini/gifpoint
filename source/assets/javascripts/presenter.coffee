@@ -1,2 +1,2 @@
-@presenter = angular.module('Presenter', [])
+@presenter = angular.module('Presenter', ['ui.router'])
 

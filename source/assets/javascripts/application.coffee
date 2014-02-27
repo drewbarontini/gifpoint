@@ -1,4 +1,5 @@
 #= require presenter
+#= require routes
 #= require services/progress
 #= require directives/hotkeys
 #= require directives/progress
