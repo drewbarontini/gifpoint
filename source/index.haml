@@ -31,6 +31,24 @@
       .middle.tac
         %h1 Warning
 
+  %slide.slide--light
+    .slide-content
+      .middle.middle--code
+        - code('sass') do
+          :plain
+            // *************************************
+            //
+            //   Card
+            //   -> Individual style containers
+            //
+            // *************************************
+
+            .card
+              @extend .bci
+              @extend .por
+              @extend .ram
+              padding: $b-whitespace
+
   %slide
     .slide-content
       .middle.middle--text

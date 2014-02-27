@@ -2,6 +2,7 @@ activate :automatic_image_sizes
 activate :directory_indexes
 activate :livereload
 activate :minify_html
+activate :syntax
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -9,6 +10,8 @@ activate :minify_html
 #     "Helping"
 #   end
 # end
+
+set :haml, { ugly: true }
 
 set :css_dir, 'assets/stylesheets'
 set :js_dir, 'assets/javascripts'
