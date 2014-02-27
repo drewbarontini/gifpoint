@@ -14,7 +14,7 @@
   link: (scope, element, attrs, slidesCtrl) ->
 
     slidesCtrl.registerSlide(element)
-    element.css('background-image', "url(#{attrs.img})")
+    element.css('background-image', "url(#{attrs.img})") if attrs.img?
 
     scope.nextSlide = () ->
       unless element.next().length == 0
