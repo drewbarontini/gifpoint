@@ -8,7 +8,7 @@
 
 # Elevator Pitch
 
-We’ve talked about the “how” of writing modular CSS, but we haven’t truly explored the “why.” What is the thought process behind modular CSS? How do we make the decisions that craft a flexible CSS architecture? How do we decide when to create new components and modules, when to refactor, what goes where, when something is something? We’ll take a practical look at that thought process by exploring popular sites and breaking them down into their various components, both reusable, and more site-specific ones.
+We’ve talked about the “how” of writing modular CSS, but we haven’t truly explored the “why.” What is the thought process behind modular CSS? How do we make the decisions that craft a flexible CSS architecture? How do we decide when to create new components and modules, when to refactor, what goes where, when something is something? We’ll take a practical look at that thought process by exploring popular sites and breaking them down into their various components.
 
 # Tagline
 
