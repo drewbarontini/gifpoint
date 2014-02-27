@@ -1,15 +1,25 @@
-“Thinking Modular CSS”, “But Why? Modular CSS”, “Blueprint Modular CSS”, “The Means to Modular CSS”, “The Modular CSS Way”.
+# Working Titles
+
+- “Thinking Modular CSS”
+- “But Why? Modular CSS”
+- “Blueprint Modular CSS”
+- “The Means to Modular CSS”
+- “The Modular CSS Way”
 
 # Elevator Pitch
 
+We’ve talked about the “how” of writing modular CSS, but we haven’t truly explored the “why.” What is the thought process behind modular CSS? How do we make the decisions that craft a flexible CSS architecture? How do we decide when to create new components and modules, when to refactor, what goes where, when something is something? We’ll take a practical look at that thought process by exploring popular sites and breaking them down into their various components, both reusable, and more site-specific ones.
+
 # Tagline
+
+Learn the “why” of modular CSS by analyzing the decisions that craft a flexible CSS architecture.
 
 # Outline
 - Introduction (personal, establish credibility)
 - Front-end is now a specialization
 - What truly is “Modular CSS”?
 - The “how” has been covered (naming conventions, organization, SRP, separation of concerns, etc.)
-- Let’s answer “why,” what is the thought process? How do we decide when something is something?
+- Let’s answer “why,” what is the thought process? How do we decide when something is something? What decisions do we make?
 - Examples, examples, examples (explore five sites breaking down patterns)
 
 # 1. Introduction
