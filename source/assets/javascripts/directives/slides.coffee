@@ -6,7 +6,7 @@
 
   controller: ($scope, $stateParams, $state) ->
     $scope.slides = []
-    $scope.currentSlide = $stateParams.index || 0
+    $scope.currentSlide = $stateParams.index || 1
 
     Hotkeys.register Hotkeys.keys.space, => @nextSlide()
     Hotkeys.register Hotkeys.keys.right, => @nextSlide()
@@ -15,11 +15,10 @@
     @registerSlide = (slide) ->
       $scope.slides.push(slide)
       @updateProgress()
-
-      if slide == $scope.slides[$stateParams.index] and $scope.currentSlide != 0
-        $scope.slides[$scope.currentSlide - 1].addClass('is-active')
-      else
-        $scope.slides[$scope.currentSlide].addClass('is-active')
+      if slide == $scope.slides[$scope.currentSlide - 1]
+        @updateProgress()
+        slide.addClass('is-active')
+      return
 
     @nextSlide = () =>
       unless $scope.currentSlide == $scope.slides.length - 1
@@ -27,6 +26,7 @@
         $scope.currentSlide++
         @updateProgress()
         $scope.slides[$scope.currentSlide].addClass('is-active')
+      return
 
     @prevSlide = () =>
       unless $scope.currentSlide == 0
@@ -34,9 +34,10 @@
         $scope.currentSlide--
         @updateProgress()
         $scope.slides[$scope.currentSlide].addClass('is-active')
+      return
 
     @updateProgress = () ->
-      Progress.update( ($scope.currentSlide + 1) / $scope.slides.length )
+      Progress.update( parseInt($scope.currentSlide) / ($scope.slides.length - 1) )
 
     @
 
