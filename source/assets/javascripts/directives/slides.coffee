@@ -4,27 +4,39 @@
   scope: {}
   transclude: true
 
-  controller: ($scope) ->
+  controller: ($scope, $stateParams, $state) ->
     $scope.slides = []
+    $scope.currentSlide = $stateParams.index || 0
+
+    Hotkeys.register Hotkeys.keys.space, => @nextSlide()
+    Hotkeys.register Hotkeys.keys.right, => @nextSlide()
+    Hotkeys.register Hotkeys.keys.left,  => @prevSlide()
 
     @registerSlide = (slide) ->
       $scope.slides.push(slide)
+      @updateProgress()
 
-    @nextSlide = (slide) ->
-      unless slide.next().length == 0
-        @updateProgress(slide)
-        slide.removeClass('is-active').next().addClass('is-active')
-      return
+      if slide == $scope.slides[$stateParams.index] and $scope.currentSlide != 0
+        $scope.slides[$scope.currentSlide - 1].addClass('is-active')
+      else
+        $scope.slides[$scope.currentSlide].addClass('is-active')
 
-    @prevSlide = (slide) ->
-      unless slide.prev().length == 0
-        @updateProgress(slide)
-        slide.removeClass('is-active').prev().addClass('is-active')
-      return
+    @nextSlide = () =>
+      unless $scope.currentSlide == $scope.slides.length - 1
+        $scope.slides[$scope.currentSlide].removeClass('is-active')
+        $scope.currentSlide++
+        @updateProgress()
+        $scope.slides[$scope.currentSlide].addClass('is-active')
 
-    @updateProgress = (slide) ->
-      Progress.currentSlide = $scope.slides.indexOf(slide)
-      Progress.update(($scope.slides.indexOf(slide) + 2) / $scope.slides.length)
+    @prevSlide = () =>
+      unless $scope.currentSlide == 0
+        $scope.slides[$scope.currentSlide].removeClass('is-active')
+        $scope.currentSlide--
+        @updateProgress()
+        $scope.slides[$scope.currentSlide].addClass('is-active')
+
+    @updateProgress = () ->
+      Progress.update( ($scope.currentSlide + 1) / $scope.slides.length )
 
     @
 
@@ -33,9 +45,4 @@
 
     </div>
   """
-
-  link: (scope, element, attrs, slidesCtrl) ->
-
-    #Hotkeys.register Hotkeys.keys.space, ->
-      #slidesCtrl.nextSlide( slidesCtrl.slides[Progress.currentSlide] )
 

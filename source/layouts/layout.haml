@@ -14,7 +14,10 @@
 
     %progress
 
-    = yield
+    %script{type: "text/ng-template", id: 'index'}
+      = yield
+
+    %div(ui-view)
 
     = javascript_include_tag 'http://code.jquery.com/jquery-1.11.0.min.js'
     = javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js'

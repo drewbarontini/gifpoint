@@ -1,7 +1,6 @@
-@presenter.config ($stateProvider, $urlRouterProvider) ->
+@presenter.config ($stateProvider) ->
 
-  $stateProvider.state('slides'
+  $stateProvider.state 'root',
     url: '/:index'
-    templateUrl: 'index.html'
-  )
+    template: '<slide-loader></slide-loader>'
 
