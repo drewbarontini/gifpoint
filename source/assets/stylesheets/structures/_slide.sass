@@ -58,6 +58,10 @@
 .slide.is-active
   @extend .fauxShow
 
+  .slide-content
+    @extend .fauxShow
+    +transform(scale(1))
+
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
@@ -65,8 +69,11 @@
 // ----- Content ----- //
 
 .slide-content
+  @extend .fauxHide
   @extend .mal
   @extend .stretch
+  +transform(scale(0.75))
+  +transition(all 0.2s ease-in-out)
 
 // ----- Image ----- //
 
