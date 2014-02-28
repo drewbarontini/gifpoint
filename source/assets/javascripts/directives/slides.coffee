@@ -35,7 +35,7 @@
       return
 
     @updateProgress = () ->
-      Progress.update( parseInt($scope.currentSlide) / ($scope.slides.length - 1) )
+      Progress.update( parseInt($scope.currentSlide) / $scope.slides.length )
 
     $scope.$on '$destroy', () ->
       Hotkeys.off()
