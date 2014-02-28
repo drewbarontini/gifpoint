@@ -57,11 +57,12 @@
 
 .slide.is-active
   @extend .fauxShow
+  +transition(all 0.2s ease-in-out)
 
   .slide-content
     @extend .fauxShow
     +transform(scale(1))
-    +transition(all 0.3s ease-in-out)
+    +transition(all 0.3s 0.2s ease-in-out)
 
 // -------------------------------------
 //   Scaffolding

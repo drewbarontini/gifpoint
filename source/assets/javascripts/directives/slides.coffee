@@ -4,7 +4,7 @@
   scope: {}
   transclude: true
 
-  controller: ($scope, $stateParams, $state) ->
+  controller: ($scope, $stateParams, $state, $timeout) ->
     $scope.slides = []
     $scope.currentSlide = $stateParams.index || 1
 
@@ -17,7 +17,7 @@
       @updateProgress()
       if slide == $scope.slides[$scope.currentSlide - 1]
         @updateProgress()
-        slide.addClass('is-active')
+        $timeout -> slide.addClass('is-active')
       return
 
     @nextSlide = () =>
