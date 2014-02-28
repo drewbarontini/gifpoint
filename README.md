@@ -3,6 +3,9 @@ Middleman, Angular-powered HTML slides
 
 ## Setup
 
+First, we need to install `bundler`, `bundle`, and then start the Middleman
+server.
+
 ```bash
 gem install bundler
 bundle install
@@ -10,6 +13,9 @@ middleman s
 ```
 
 ## Creating Slides
+
+All of the slides are in `source/index.haml`, and below are some different
+slide types you can use.
 
 ### Basic Slide
 
@@ -20,7 +26,6 @@ middleman s
 ```
 
 #### Colors
-
 
 ```haml
 / Light
