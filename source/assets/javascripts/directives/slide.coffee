@@ -1,4 +1,4 @@
-@presenter.directive 'slide', () ->
+@presenter.directive 'slide', (Hotkeys) ->
   require: '^slides'
   restrict: 'E'
   replace: true
@@ -14,11 +14,9 @@
   link: (scope, element, attrs, slidesCtrl) ->
 
     slidesCtrl.registerSlide(element)
+
     element.css('background-image', "url(#{attrs.img})") if attrs.img?
 
-    scope.nextSlide = () ->
-      unless element.next().length == 0
-        slidesCtrl.updateProgress(element)
-        element.removeClass('is-active').next().addClass('is-active')
-      return
+    scope.nextSlide = () -> slidesCtrl.nextSlide(element)
+    scope.prevSlide = () -> slidesCtrl.prevSlide(element)
 
