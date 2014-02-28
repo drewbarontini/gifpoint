@@ -21,23 +21,24 @@
       return
 
     @nextSlide = () =>
-      unless $scope.currentSlide == $scope.slides.length - 1
-        $scope.slides[$scope.currentSlide].removeClass('is-active')
+      unless $scope.currentSlide > $scope.slides.length - 1
         $scope.currentSlide++
+        $state.go('root', { index: $scope.currentSlide })
         @updateProgress()
-        $scope.slides[$scope.currentSlide].addClass('is-active')
       return
 
     @prevSlide = () =>
-      unless $scope.currentSlide == 0
-        $scope.slides[$scope.currentSlide].removeClass('is-active')
+      unless $scope.currentSlide <= 1
         $scope.currentSlide--
+        $state.go('root', { index: $scope.currentSlide })
         @updateProgress()
-        $scope.slides[$scope.currentSlide].addClass('is-active')
       return
 
     @updateProgress = () ->
       Progress.update( parseInt($scope.currentSlide) / ($scope.slides.length - 1) )
+
+    $scope.$on '$destroy', () ->
+      Hotkeys.off()
 
     @
 

@@ -10,3 +10,6 @@
       switch e.which
         when key then cb()
 
+  off: () =>
+    $document.off
+
