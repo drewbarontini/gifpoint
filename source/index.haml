@@ -5,12 +5,6 @@
       .middle.tac
         %h1 Slide Title
 
-  %slide
-    .slide-content
-      .middle.tac
-        %h2 Image
-        = image_tag 'http://placehold.it/800x400', alt: 'Code School', class: 'slide-img'
-
   %slide.slide--light
     .slide-content
       .middle.tac
@@ -21,6 +15,11 @@
       .middle.tac
         %h1 Dark
 
+  %slide.slide--subdue
+    .slide-content
+      .middle.tac
+        %h1 Subdued
+
   %slide.slide--success
     .slide-content
       .middle.tac
@@ -30,6 +29,33 @@
     .slide-content
       .middle.tac
         %h1 Warning
+
+  %slide.slide--light
+    .slide-content
+      %h1.mbs List of Things
+      .grid
+        .grid-box.grid-box--1of2
+          %ul
+            %li One thing
+            %li Here's another thing
+            %li And another
+        .grid-box.grid-box--1of2
+          %ul
+            %li Oh man! Another thing
+            %li Here's another thing
+            %li And, finally, another
+
+  %slide
+    .slide-content
+      .middle.middle--text.tac
+        %h1.mbf Another Title
+        %p This is a subtitle.
+
+  %slide
+    .slide-content
+      .middle.tac
+        %h2 Image
+        = image_tag 'http://placehold.it/800x400', alt: 'Code School', class: 'slide-img'
 
   %slide.slide--light
     .slide-content
@@ -53,8 +79,9 @@
     .slide-content
       .middle.middle--text
         %p.tsxl
-          What would happen if I put some longer, more thought-provoking
-          text here that fills up more space?
+          "What would happen if I put some longer, more thought-provoking
+          text here that fills up more space?"
+        %p.mbf &mdash; Drew Barontini
 
   %slide(img='http://gificiency.com/m/angry-batman.gif')
     .slide-content

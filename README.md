@@ -40,6 +40,12 @@ slide types you can use.
     .middle.tac
       %h1 Dark
 
+/ Subdued
+%slide.slide--subdue
+  .slide-content
+    .middle.tac
+      %h1 Subdued
+
 / Success
 %slide.slide--success
   .slide-content
@@ -93,15 +99,46 @@ slide types you can use.
       %h1 Slide Title
 ```
 
+#### Grids/Lists
+
+```haml
+%slide.slide--light
+  .slide-content
+    %h1.mbs List of Things
+    .grid
+      .grid-box.grid-box--1of2
+        %ul
+          %li One thing
+          %li Here's another thing
+          %li And another
+      .grid-box.grid-box--1of2
+        %ul
+          %li Oh man! Another thing
+          %li Here's another thing
+          %li And, finally, another
+```
+
 #### Longer Text
 
 ```haml
 %slide
   .slide-content
     .middle.middle--text
-      %p.tsxl
+      %p.mbf.tsxl
         What would happen if I put some longer, more thought-provoking
         text here that fills up more space?
+```
+
+#### Quote
+
+```haml
+%slide
+  .slide-content
+    .middle.middle--text
+      %p.tsxl
+        "What would happen if I put some longer, more thought-provoking
+        text here that fills up more space?"
+      %p.mbf &mdash; Drew Barontini
 ```
 
 #### GIF/Image
