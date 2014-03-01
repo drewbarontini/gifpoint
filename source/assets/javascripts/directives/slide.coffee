@@ -6,9 +6,9 @@
   transclude: true
 
   template: """
-    <div class='slide' ng-transclude>
+    <section class='slide' ng-transclude>
 
-    </div>
+    </section>
   """
 
   link: (scope, element, attrs, slidesCtrl) ->
