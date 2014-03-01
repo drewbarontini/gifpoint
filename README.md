@@ -64,7 +64,7 @@ slide types you can use.
 ```haml
 %slide.slide--light
   .slide-content
-    .middle.middle--code
+    .middle.middle--med
       - code('sass') do
         :plain
           // Code goes here...
@@ -123,7 +123,7 @@ slide types you can use.
 ```haml
 %slide
   .slide-content
-    .middle.middle--text
+    .middle.middle--lrg
       %p.mbf.tsxl
         What would happen if I put some longer, more thought-provoking
         text here that fills up more space?
@@ -134,7 +134,7 @@ slide types you can use.
 ```haml
 %slide
   .slide-content
-    .middle.middle--text
+    .middle.middle--lrg
       %p.tsxl
         "What would happen if I put some longer, more thought-provoking
         text here that fills up more space?"
