@@ -16,4 +16,3 @@
     slidesCtrl.registerSlide(element)
 
     element.css('background-image', "url(#{attrs.img})") if attrs.img?
-
