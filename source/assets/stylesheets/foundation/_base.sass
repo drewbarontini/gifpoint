@@ -31,12 +31,20 @@ li
 pre
   @extend .tfm
 
+blockquote
+  @extend .mbs
+  @extend .tsxl
+  margin-left: 0
+
 // ----- Headers ----- //
+
+h1, h2, h3, h4
+  @extend .mbxs
 
 h1, .h1,
 h2, .h2,
-h3, .h3
-  @extend .mbxs
+h3, .h3,
+h4, .h4
   @extend .mtf
   @extend .tfh
   @extend .ttu
@@ -51,6 +59,11 @@ h2, .h2
 
 h3, .h3
   font-size: 200%
+
+h4, .h4
+  @extend .tfl
+  font-size: 150%
+  font-weight: 300
 
 // -------------------------------------
 //   Inline Content

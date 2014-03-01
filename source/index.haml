@@ -17,6 +17,12 @@
       .middle.tac
         %h1 Slide Title
 
+  %slide
+    .slide-content
+      .middle.middle--lrg.tac
+        %h1.mbf Another Title
+        %p This is a subtitle.
+
   %slide.slide--light
     .slide-content
       .middle.tac
@@ -45,6 +51,14 @@
   %slide.slide--light
     .slide-content
       %h1.mbs List of Things
+      %ul
+        %li One thing
+        %li Here's another thing
+        %li And another
+
+  %slide.slide--light
+    .slide-content
+      %h1.mbs List of Things
       .grid
         .grid-box.grid-box--1of2
           %ul
@@ -60,14 +74,7 @@
   %slide
     .slide-content
       .middle.middle--lrg.tac
-        %h1.mbf Another Title
-        %p This is a subtitle.
-
-  %slide
-    .slide-content
-      .middle.tac
-        %h2 Image
-        = image_tag 'http://placehold.it/800x400', alt: 'Code School', class: 'slide-img'
+        = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-img'
 
   %slide.slide--light
     .slide-content
@@ -90,22 +97,34 @@
   %slide
     .slide-content
       .middle.middle--lrg
-        %p.tsxl
+        %blockquote
           "What would happen if I put some longer, more thought-provoking
           text here that fills up more space?"
         %p.mbf &mdash; Drew Barontini
+
+  %slide.slide--fade.slide--fade--dark(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+    .slide-content
+      .middle.tac
+        %p.h4.mbf Subtitle
+        %h1 Slide Title
+
+  %slide.slide--fade.slide--fade--light(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+    .slide-content
+      .middle.tac
+        %p.h4.mbf Subtitle
+        %h1 Slide Title
 
   %slide(img='http://gificiency.com/m/angry-batman.gif')
     .slide-content
       .bottom
         %h1.tsh WHURZRACHEL!?
-        %p WHURRIZSHE?
 
   %slide(img='http://gificiency.com/m/dance-abed.gif')
     .slide-content
-      .middle.tac
-        %h1 GIF
-        %p This is some more description text.
+      .middle.middle--med.tac
+        .card.card--dark
+          %h1 GIF
+          %p This is some more description text.
 
   %slide.slide--tile(img='http://gificiency.com/m/dance-abed.gif')
 
@@ -115,3 +134,4 @@
       %p This is some more description text.
 
   %slide(img='http://gificiency.com/m/excited-parks.gif')
+

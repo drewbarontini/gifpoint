@@ -26,6 +26,25 @@
 .slide.slide--dark
   @extend .bcb
 
+// ----- Fade ----- //
+
+.slide.slide--fade
+  &::after
+    @extend .stretch
+    content: ''
+    opacity: 0.75
+    z-index: 1
+
+.slide.slide--fade--dark
+  @extend .tci
+  &::after
+    background: #000
+
+.slide.slide--fade--light
+  @extend .tcb
+  &::after
+    @extend .bci
+
 // ----- Light ----- //
 
 .slide.slide--light
@@ -81,6 +100,7 @@
   @extend .mal
   @extend .stretch
   +transform(scale(0.75))
+  z-index: 10
 
 // ----- Image ----- //
 

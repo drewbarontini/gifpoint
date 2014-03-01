@@ -20,9 +20,23 @@ slide types you can use.
 ### Basic Slide
 
 ```haml
+/ Text
 %slide
   .slide-content
     %h1 Slide Title
+
+/ Centered Text + Subtitle
+%slide
+  .slide-content
+    .middle.middle--lrg.tac
+      %h1.mbf Another Title
+      %p This is a subtitle.
+
+/ Image
+%slide
+  .slide-content
+    .middle.middle--lrg.tac
+      = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-img'
 ```
 
 #### Colors
@@ -135,14 +149,36 @@ slide types you can use.
 %slide
   .slide-content
     .middle.middle--lrg
-      %p.tsxl
+      %blockquote
         "What would happen if I put some longer, more thought-provoking
         text here that fills up more space?"
       %p.mbf &mdash; Drew Barontini
 ```
 
+#### Image Overlay
+
+```haml
+/ Dark
+%slide.slide--fade.slide--fade--dark(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
+/ Dark
+%slide.slide--fade.slide--fade--light(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+```
+
 #### GIF/Image
 
 ```haml
+/ Fill
 %slide(img='http://gificiency.com/m/excited-parks.gif')
+
+/ Tiled
+%slide.slide--tile(img='http://gificiency.com/m/excited-parks.gif')
 ```
