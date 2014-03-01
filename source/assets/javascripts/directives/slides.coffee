@@ -12,7 +12,7 @@
     Hotkeys.register Hotkeys.keys.right, => @nextSlide()
     Hotkeys.register Hotkeys.keys.left,  => @prevSlide()
 
-    @registerSlide = (slide) ->
+    @registerSlide = (slide) =>
       $scope.slides.push(slide)
       @updateProgress()
       if slide == $scope.slides[$scope.currentSlide - 1]
@@ -47,4 +47,3 @@
 
     </div>
   """
-
