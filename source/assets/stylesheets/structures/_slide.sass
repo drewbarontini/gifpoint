@@ -35,6 +35,7 @@
 
 .slide.slide--fade
   &::after
+    @extend .bch
     @extend .stretch
     content: ''
     opacity: $slide--fade-opacity
@@ -53,13 +54,6 @@
   @extend .tci
   &::after
     @extend .bce
-
-// Highlight
-
-.slide.slide--fade--highlight
-  @extend .tci
-  &::after
-    @extend .bch
 
 // Light
 

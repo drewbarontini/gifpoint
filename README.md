@@ -166,6 +166,13 @@ Here are some different slide types you can use:
 #### Image Overlay
 
 ```haml
+/ Basic
+%slide.slide--fade(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
 / Dark
 %slide.slide--fade.slide--fade--dark(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
   .slide-content
@@ -175,13 +182,6 @@ Here are some different slide types you can use:
 
 / Light
 %slide.slide--fade.slide--fade--light(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
-  .slide-content
-    .middle.tac
-      %p.h4.mbf Subtitle
-      %h1 Slide Title
-
-/ Highlight
-%slide.slide--fade.slide--fade--highlight(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
