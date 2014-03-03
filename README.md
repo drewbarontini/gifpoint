@@ -175,7 +175,7 @@ Here are some different slide types you can use:
       %h1 Slide Title
 ```
 
-#### GIF/Image
+#### Full-screen GIF/Image
 
 ```haml
 / Fill
