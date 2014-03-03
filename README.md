@@ -14,8 +14,10 @@ middleman s
 
 ## Creating Slides
 
-All of the slides are in `source/index.haml`, and below are some different
-slide types you can use.
+All of the slides are in `source/index.haml`. They are written as Angular
+directives in Haml.
+
+Here are some different slide types you can use:
 
 ### Basic Slide
 
