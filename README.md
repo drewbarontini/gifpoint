@@ -217,4 +217,7 @@ Here are some different slide types you can use:
 
 / Tiled
 %slide.slide--tile(img='http://gificiency.com/m/excited-parks.gif')
+
+/ Local
+%slide(img="#{image_path('image.jpg')}")
 ```
