@@ -1,0 +1,1 @@
+!function(){this.presenter.config(function(e){return e.state("root",{url:"/:index",template:"<slide-loader></slide-loader>"})})}.call(this);
