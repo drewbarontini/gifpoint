@@ -26,6 +26,11 @@
 .slide.slide--dark
   @extend .bcb
 
+// ----- Error ----- //
+
+.slide.slide--error
+  @extend .bce
+
 // ----- Fade ----- //
 
 .slide.slide--fade
@@ -35,15 +40,54 @@
     opacity: $slide--fade-opacity
     z-index: 1
 
+// Dark
+
 .slide.slide--fade--dark
   @extend .tci
   &::after
     background: #000
 
+// Error
+
+.slide.slide--fade--error
+  @extend .tci
+  &::after
+    @extend .bce
+
+// Highlight
+
+.slide.slide--fade--highlight
+  @extend .tci
+  &::after
+    @extend .bch
+
+// Light
+
 .slide.slide--fade--light
   @extend .tcb
   &::after
     @extend .bci
+
+// Subdue
+
+.slide.slide--fade--subdue
+  @extend .tcb
+  &::after
+    @extend .bcs
+
+// Success
+
+.slide.slide--fade--success
+  @extend .tci
+  &::after
+    @extend .bcu
+
+// Warning
+
+.slide.slide--fade--warning
+  @extend .tci
+  &::after
+    @extend .bcw
 
 // ----- Light ----- //
 

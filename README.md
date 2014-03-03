@@ -68,6 +68,12 @@ Here are some different slide types you can use:
     .middle.tac
       %h1 Success
 
+/ Error
+%slide.slide--error
+  .slide-content
+    .middle.tac
+      %h1 Error
+
 / Warning
 %slide.slide--warning
   .slide-content
@@ -167,8 +173,36 @@ Here are some different slide types you can use:
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
-/ Dark
+/ Light
 %slide.slide--fade.slide--fade--light(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
+/ Highlight
+%slide.slide--fade.slide--fade--highlight(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
+/ Success
+%slide.slide--fade.slide--fade--success(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
+/ Error
+%slide.slide--fade.slide--fade--error(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+  .slide-content
+    .middle.tac
+      %p.h4.mbf Subtitle
+      %h1 Slide Title
+
+/ Warning
+%slide.slide--fade.slide--fade--warning(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
