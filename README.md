@@ -229,6 +229,9 @@ Here are some different slide types you can use:
 #### Full-screen GIF/Image
 
 ```haml
+/ Contain
+%slide.slide--contain(img='http://gificiency.com/m/excited-parks.gif')
+
 / Fill
 %slide(img='http://gificiency.com/m/excited-parks.gif')
 
