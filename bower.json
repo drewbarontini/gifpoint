@@ -8,13 +8,6 @@
   "description": "Middleman, Angular-powered HTML slides",
   "license": "MIT",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "source/assets/javascripts/components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
     "jquery": "~2.1.0",
     "angular": "~1.2.14",
