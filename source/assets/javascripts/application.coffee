@@ -1,3 +1,6 @@
+#= require jquery/dist/jquery
+#= require angular/angular
+#= require angular-ui-router/release/angular-ui-router
 #= require presenter
 #= require routes
 #= require services/progress

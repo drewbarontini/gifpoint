@@ -10,6 +10,10 @@ activate :syntax
 #   end
 # end
 
+ready do
+  sprockets.append_path File.join root, 'bower_components'
+end
+
 set :haml, { ugly: true }
 
 set :css_dir, 'assets/stylesheets'
