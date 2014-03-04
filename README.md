@@ -9,6 +9,23 @@ server.
 ```bash
 gem install bundler
 bundle install
+```
+
+Next, we need to set up the project dependencies via Bower. If you don't have bower installed:
+
+```bash
+npm install -g bower
+```
+
+Install the dependencies:
+
+```bash
+bower install
+```
+
+And finally, start the Middleman server:
+
+```bash
 middleman s
 ```
 
