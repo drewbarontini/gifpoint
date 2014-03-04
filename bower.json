@@ -1,7 +1,6 @@
 {
   "name": "Presenter",
   "version": "0.0.0",
-  "directory": "source/assets",
   "homepage": "https://github.com/drewbarontini/presenter",
   "authors": [
     "Drew Barontini <drewbarontini@gmail.com>"
