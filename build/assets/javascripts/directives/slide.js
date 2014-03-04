@@ -1,0 +1,1 @@
+!function(){this.presenter.directive("slide",function(){return{require:"^slides",restrict:"E",replace:!0,scope:{},transclude:!0,template:"<section class='slide' ng-transclude>\n\n</section>",link:function(e,i,n,r){return r.registerSlide(i),null!=n.img?i.css("background-image","url("+n.img+")"):void 0}}})}.call(this);
