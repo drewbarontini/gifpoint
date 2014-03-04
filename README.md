@@ -23,11 +23,13 @@ Install the dependencies:
 bower install
 ```
 
-And finally, start the Middleman server:
+Start the Middleman server:
 
 ```bash
 middleman s
 ```
+
+Go to `localhost:4567/#/` and you should see the first slide.
 
 ## Creating Slides
 
