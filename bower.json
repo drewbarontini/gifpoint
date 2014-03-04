@@ -1,0 +1,24 @@
+{
+  "name": "Presenter",
+  "version": "0.0.0",
+  "directory": "source/assets",
+  "homepage": "https://github.com/drewbarontini/presenter",
+  "authors": [
+    "Drew Barontini <drewbarontini@gmail.com>"
+  ],
+  "description": "Middleman, Angular-powered HTML slides",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "source/assets/javascripts/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "angular": "~1.2.14",
+    "angular-ui-router": "~0.2.9"
+  }
+}
