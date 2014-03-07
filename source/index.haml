@@ -2,13 +2,13 @@
 
   %slide
     .slide-content
-      .middle
+      .middle.middle--auto
         .bucket.bucket--flag
           .bucket-media
             = image_tag 'http://drewb.io/me.svg', alt: 'Drew Barontini', width: '200', height: '290'
           .bucket-content
             %h1.mbf Presenter
-            %p.mbf by Drew Barontini
+            %p.mbf by @drewbarontini
 
   %slide
     .slide-content
@@ -81,7 +81,7 @@
 
   %slide.slide--light
     .slide-content
-      .middle.middle--med
+      .middle.middle--auto
         - code('sass') do
           :plain
             // *************************************
@@ -99,7 +99,7 @@
 
   %slide
     .slide-content
-      .middle.middle--lrg
+      .bottom
         %blockquote
           "What would happen if I put some longer, more thought-provoking
           text here that fills up more space?"
@@ -143,19 +143,19 @@
   %slide(img='http://gificiency.com/m/angry-batman.gif')
     .slide-content
       .bottom
-        %h1.tsh WHURZRACHEL!?
+        %h1 GIF!
 
   %slide.slide--fade.slide--fade--light(img='http://gificiency.com/m/dance-abed.gif')
     .slide-content
       .middle.middle--med.tac
-        %h1 GIF
+        %h1 GIF!
         %p This is some more description text.
 
   %slide.slide--tile(img='http://gificiency.com/m/what-bored.gif')
 
   %slide.slide--fade.slide--fade--dark(img='http://gificiency.com/m/happy-hulk.gif')
     .slide-content
-      %h1 GIF
+      %h1 GIF!
       %p This is some more description text.
 
   %slide(img='http://gificiency.com/m/excited-parks.gif')

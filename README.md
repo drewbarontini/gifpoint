@@ -105,7 +105,7 @@ Here are some different slide types you can use:
 ```haml
 %slide.slide--light
   .slide-content
-    .middle.middle--med
+    .middle.middle--auto
       - code('sass') do
         :plain
           // Code goes here...
@@ -164,8 +164,8 @@ Here are some different slide types you can use:
 ```haml
 %slide
   .slide-content
-    .middle
-      %p.mbf.tsxl
+    .bottom
+      %p.tsxl
         What would happen if I put some longer, more thought-provoking
         text here that fills up more space?
 ```
@@ -175,11 +175,11 @@ Here are some different slide types you can use:
 ```haml
 %slide
   .slide-content
-    .middle
+    .bottom
       %blockquote
         "What would happen if I put some longer, more thought-provoking
         text here that fills up more space?"
-      %p.mbf &mdash; Drew Barontini
+      %p &mdash; Drew Barontini
 ```
 
 #### Image Overlay
