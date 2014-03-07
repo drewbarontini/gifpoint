@@ -49,14 +49,14 @@ Here are some different slide types you can use:
 / Centered Text + Subtitle
 %slide
   .slide-content
-    .middle.middle--lrg.tac
+    .middle.tac
       %h1.mbf Another Title
       %p This is a subtitle.
 
 / Image
 %slide
   .slide-content
-    .middle.middle--lrg.tac
+    .middle.tac
       = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-img'
 ```
 
@@ -164,7 +164,7 @@ Here are some different slide types you can use:
 ```haml
 %slide
   .slide-content
-    .middle.middle--lrg
+    .middle
       %p.mbf.tsxl
         What would happen if I put some longer, more thought-provoking
         text here that fills up more space?
@@ -175,7 +175,7 @@ Here are some different slide types you can use:
 ```haml
 %slide
   .slide-content
-    .middle.middle--lrg
+    .middle
       %blockquote
         "What would happen if I put some longer, more thought-provoking
         text here that fills up more space?"
@@ -186,42 +186,42 @@ Here are some different slide types you can use:
 
 ```haml
 / Basic
-%slide.slide--fade(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
 / Dark
-%slide.slide--fade.slide--fade--dark(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade.slide--fade--dark(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
 / Light
-%slide.slide--fade.slide--fade--light(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade.slide--fade--light(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
 / Success
-%slide.slide--fade.slide--fade--success(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade.slide--fade--success(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
 / Error
-%slide.slide--fade.slide--fade--error(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade.slide--fade--error(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
       %h1 Slide Title
 
 / Warning
-%slide.slide--fade.slide--fade--warning(img='http://farm8.staticflickr.com/7435/10192809164_82f31c7b1c_o.jpg')
+%slide.slide--fade.slide--fade--warning(img='IMAGE_URL')
   .slide-content
     .middle.tac
       %p.h4.mbf Subtitle
@@ -232,14 +232,17 @@ Here are some different slide types you can use:
 
 ```haml
 / Contain
-%slide.slide--contain(img='http://gificiency.com/m/excited-parks.gif')
+%slide.slide--contain(img='IMAGE_URL')
 
 / Fill
-%slide(img='http://gificiency.com/m/excited-parks.gif')
+%slide(img='IMAGE_URL')
+
+/ Inset
+%slide.slide--inset(img='IMAGE_URL')
 
 / Tiled
-%slide.slide--tile(img='http://gificiency.com/m/excited-parks.gif')
+%slide.slide--tile(img='IMAGE_URL')
 
 / Local
-%slide(img="#{image_path('image.jpg')}")
+%slide(img="#{image_path('IMAGE_URL')}")
 ```
