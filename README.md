@@ -60,7 +60,7 @@ Here are some different slide types you can use:
       = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
 
 / Video
-%slide
+%slide.slide--video
   .middle.tac
     %iframe.slide-media.mhc(width="640" height="480" src="//www.youtube.com/embed/EMBEDID" frameborder="0" allowfullscreen)
 
