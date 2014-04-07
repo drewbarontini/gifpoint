@@ -46,6 +46,11 @@ Here are some different slide types you can use:
   .slide-content
     %h1 Slide Title
 
+/ Title Slide
+%slide.slide--title
+  .slide-content
+    %h1 Slide Title
+
 / Centered Text + Subtitle
 %slide
   .slide-content
