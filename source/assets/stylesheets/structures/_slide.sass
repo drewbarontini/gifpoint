@@ -6,10 +6,9 @@
 // *************************************
 
 .slide
+  @extend .bcl
   @extend .fauxHide
   @extend .stretch
-  @extend .tci
-  background-color: $c-highlight
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -31,15 +30,18 @@
 
 .slide.slide--dark
   @extend .bcb
+  @extend .tci
 
 // ----- Error ----- //
 
 .slide.slide--error
+  @extend .tci
   @extend .bce
 
 // ----- Fade ----- //
 
 .slide.slide--fade
+  @extend .tci
   &::after
     @extend .bch
     @extend .stretch
@@ -64,7 +66,7 @@
 // Light
 
 .slide.slide--fade--light
-  @extend .tcb
+  color: $c-base
   &::after
     @extend .bci
 
@@ -104,6 +106,7 @@
 // ----- Success ----- //
 
 .slide.slide--success
+  @extend .tci
   background: $c-success
 
 // ----- Tile ----- //
@@ -116,16 +119,19 @@
 // ----- Title ----- //
 
 .slide.slide--title
+  @extend .tci
   background: $c-title
 
 // ----- Video ----- //
 
 .slide.slide--video
+  @extend .tci
   background: black
 
 // ----- Warning ----- //
 
 .slide.slide--warning
+  @extend .tci
   background: $c-warning
 
 // -------------------------------------
@@ -140,8 +146,6 @@
 
   .slide-content
     @extend .fauxShow
-    +transform(scale(1))
-    +transition(all 0.3s 0.2s ease-in-out)
 
 // -------------------------------------
 //   Scaffolding
@@ -153,7 +157,6 @@
   @extend .fauxHide
   @extend .mal
   @extend .stretch
-  +transform(scale(0.75))
   z-index: 10
 
 // ----- Image ----- //
