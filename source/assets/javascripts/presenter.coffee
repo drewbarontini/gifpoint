@@ -1,2 +1,2 @@
-@presenter = angular.module('Presenter', ['ui.router', 'ngAnimate'])
+@presenter = angular.module('Presenter', ['ui.router'])
 

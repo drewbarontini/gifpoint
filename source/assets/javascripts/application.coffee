@@ -1,6 +1,5 @@
 #= require jquery/dist/jquery
 #= require angular/angular
-#= require angular-animate/angular-animate
 #= require angular-ui-router/release/angular-ui-router
 #= require presenter
 #= require routes
