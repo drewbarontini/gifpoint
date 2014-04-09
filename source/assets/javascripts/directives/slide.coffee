@@ -6,13 +6,17 @@
   transclude: true
 
   template: """
-    <section class='slide' ng-transclude>
+    <section class='slide' ng-transclude ng-class="{ 'is-active': activeSlide() }">
 
     </section>
   """
 
   link: (scope, element, attrs, slidesCtrl) ->
 
-    slidesCtrl.registerSlide(element)
+    scope.index = slidesCtrl.registerSlide(element)
 
     element.css('background-image', "url(#{attrs.img})") if attrs.img?
+
+    scope.activeSlide = ->
+      slidesCtrl.isActive(scope.index)
+
