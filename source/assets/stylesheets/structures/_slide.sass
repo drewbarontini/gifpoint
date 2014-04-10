@@ -147,8 +147,7 @@
   .slide-content
     @extend .fauxShow
     @if $slide-transition
-      +transform(scale(1))
-      +transition(all 0.4s ease-in-out)
+      +transition(all $slide-transition-speed ease-in-out)
 
   .slide-content.noTransition
     @extend .noTransition
@@ -164,8 +163,6 @@
   @extend .mal
   @extend .stretch
   z-index: 10
-  @if $slide-transition
-    +transform(scale(0.5))
 
 // ----- Image ----- //
 
