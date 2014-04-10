@@ -12,6 +12,7 @@
   background-position: center
   background-repeat: no-repeat
   background-size: cover
+  border-bottom: $progress-height solid rgba(#fff, 0.4)
   height: 100%
   overflow: hidden
   width: 100%
@@ -145,8 +146,9 @@
 
   .slide-content
     @extend .fauxShow
-    +transform(scale(1))
-    +transition(all 0.4s ease-in-out)
+    @if $slide-transition
+      +transform(scale(1))
+      +transition(all 0.4s ease-in-out)
 
   .slide-content.noTransition
     @extend .noTransition
@@ -161,8 +163,9 @@
   @extend .fauxHide
   @extend .mal
   @extend .stretch
-  +transform(scale(0.5))
   z-index: 10
+  @if $slide-transition
+    +transform(scale(0.5))
 
 // ----- Image ----- //
 
