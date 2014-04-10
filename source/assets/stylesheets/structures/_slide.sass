@@ -9,10 +9,12 @@
   @extend .bcl
   @extend .fauxHide
   @extend .stretch
+  @if $slide-transition
+    +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
   background-position: center
   background-repeat: no-repeat
   background-size: cover
-  border-bottom: $progress-height solid rgba(#fff, 0.4)
+  box-shadow: inset 0 (-$progress-height) rgba(#fff, 0.4)
   height: 100%
   overflow: hidden
   width: 100%
@@ -143,11 +145,13 @@
 
 .slide.is-active
   @extend .fauxShow
+  @if $slide-transition
+    +transition(all $slide-transition-speed ease-in-out)
 
   .slide-content
     @extend .fauxShow
     @if $slide-transition
-      +transition(all $slide-transition-speed ease-in-out)
+      +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
 
   .slide-content.noTransition
     @extend .noTransition
@@ -162,6 +166,8 @@
   @extend .fauxHide
   @extend .mal
   @extend .stretch
+  @if $slide-transition
+    +transition(all $slide-transition-speed ease-in-out)
   z-index: 10
 
 // ----- Image ----- //
