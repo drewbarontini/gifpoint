@@ -20,7 +20,6 @@
       @updateProgress()
       if slide == $scope.slides[$scope.currentSlide - 1]
         @updateProgress()
-        #$timeout -> slide.addClass('is-active')
         $scope.activeSlide = !$scope.activeSlide
       $scope.slides.indexOf(slide) + 1
 
