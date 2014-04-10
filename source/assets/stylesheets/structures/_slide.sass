@@ -153,7 +153,12 @@
     @if $slide-transition
       +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
 
-  .slide-content.noTransition
+// ----- No Transition ----- //
+
+.slide.is-active.noTransition
+  @extend .noTransition
+
+  .slide-content
     @extend .noTransition
 
 // -------------------------------------
