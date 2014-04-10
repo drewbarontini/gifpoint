@@ -257,3 +257,12 @@ Here are some different slide types you can use:
 / Local
 %slide(img="#{image_path('IMAGE_URL')}")
 ```
+
+#### No Slide Transition
+
+```haml
+%slide
+  .slide-content.noTransition
+    .middle.tac
+      %h1 Slide Title
+```
