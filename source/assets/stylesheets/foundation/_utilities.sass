@@ -90,6 +90,13 @@
 .noTransition
   +transition(none)
 
+// ----- Right ----- //
+
+.right
+  left: auto
+  right: 0
+  position: absolute
+
 // ----- Stretch ----- //
 
 .stretch
@@ -131,12 +138,23 @@
 //   Border
 // -------------------------------------
 
+// ----- Standard ----- //
+
 .bdr
   border: $b-border
 .bdrb
   border-bottom: $b-border
 .bdrt
   border-top: $b-border
+
+// ----- Inverted ----- //
+
+.bdri
+  border: $b-borderWidth $b-borderStyle $c-invert
+.bdrbi
+  border-bottom: $b-borderWidth $b-borderStyle $c-invert
+.bdrti
+  border-top: $b-borderWidth $b-borderStyle $c-invert
 
 // -------------------------------------
 //   Display
@@ -242,6 +260,13 @@
   padding-top: 0.5 * $b-whitespace
 .ptm
   padding-top: $b-whitespace
+
+// -------------------------------------
+//   Opacity
+// -------------------------------------
+
+.oph
+  opacity: 0.5
 
 // -------------------------------------
 //   Positioning
