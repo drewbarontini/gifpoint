@@ -258,11 +258,18 @@ Here are some different slide types you can use:
 %slide(img="#{image_path('IMAGE_URL')}")
 ```
 
-#### No Slide Transition
+#### Slide Transitions
+
+You can remove a transition from a single slide:
 
 ```haml
-%slide
-  .slide-content.noTransition
+%slide.noTransition
+  .slide-content
     .middle.tac
       %h1 Slide Title
+```
+
+Or altogether in `source/assets/stylesheets/foundation/_settings.sass`:
+```sass
+$slide-transition: false
 ```
