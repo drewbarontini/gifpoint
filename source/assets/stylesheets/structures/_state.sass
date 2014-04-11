@@ -12,13 +12,20 @@
 .is-previewing
   $scale: 0.5
 
+  .slide
+    +transition(transform $slide-transition-speed ease-in-out)
+    .slide-content
+      +transition(transform $slide-transition-speed ease-in-out)
+
   .slide.is-active
     +transform(scale($scale) translateX(0))
+    +transition(transform $slide-transition-speed ease-in-out)
     box-shadow: none
 
     + .slide
       @extend .fauxShow
       +transform(scale($scale) translateX(100%))
+      +transition(transform $slide-transition-speed ease-in-out)
 
       .slide-content
         @extend .fauxShow
