@@ -168,11 +168,13 @@
 
 .slide-content
   @extend .fauxHide
-  @extend .mal
+  @extend .mam
   @extend .stretch
   @if $slide-transition
     +transition(all $slide-transition-speed ease-in-out)
   z-index: 10
+  +respond-to($breakpoint-large)
+    margin: 2 * $b-whitespace
 
 // ----- Image ----- //
 
