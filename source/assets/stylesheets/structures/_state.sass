@@ -1,0 +1,25 @@
+// *************************************
+//
+//   State
+//   -> Global application states
+//
+// *************************************
+
+// -------------------------------------
+//   Previewing
+// -------------------------------------
+
+.is-previewing
+  $scale: 0.5
+
+  .slide.is-active
+    +transform(scale($scale) translateX(0))
+    box-shadow: none
+
+    + .slide
+      @extend .fauxShow
+      +transform(scale($scale) translateX(100%))
+
+      .slide-content
+        @extend .fauxShow
+
