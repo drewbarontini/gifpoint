@@ -269,6 +269,10 @@ You can use the `%yt-video` directive to load a responsive YouTube video. Just a
 
 ## Slide Transitions
 
+- Use the `right arrow` or `spacebar` to move right.
+- Use the `left arrow` to move left.
+- Use `escape` to bring up the preview.
+
 ### Remove Transition From All Slides
 
 `source/assets/stylesheets/foundation/_settings.sass`:

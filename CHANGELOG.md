@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.5.0
+04/11/14
+
+- New preview state
+
 ## v0.4.0
 04/11/14
 
