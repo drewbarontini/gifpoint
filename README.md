@@ -260,14 +260,14 @@ Here are some different slide types you can use:
 
 ## Slide Transitions
 
-## Remove Transition From All Slides
+### Remove Transition From All Slides
 
 `source/assets/stylesheets/foundation/_settings.sass`:
 ```sass
 $slide-transition: false
 ```
 
-## Remove Transition From a Single Slide
+### Remove Transition From a Single Slide
 
 ```haml
 %slide.noTransition
