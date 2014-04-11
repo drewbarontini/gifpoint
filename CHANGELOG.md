@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.4.0
+04/11/14
+
+- New YouTube video directive
+
 ## v0.3.0
 04/11/14
 

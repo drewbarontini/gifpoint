@@ -63,12 +63,6 @@ Here are some different slide types you can use:
   .slide-content
     .middle.tac
       = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
-
-/ Video
-%slide.slide--video
-  .middle.tac
-    %iframe.slide-media.mhc(width="640" height="480" src="//www.youtube.com/embed/EMBEDID" frameborder="0" allowfullscreen)
-
 ```
 
 #### Colors
@@ -256,6 +250,21 @@ Here are some different slide types you can use:
 
 / Local
 %slide(img="#{image_path('IMAGE_URL')}")
+```
+
+#### Video (YouTube)
+
+You can use the `%yt-video` directive to load a responsive YouTube video. Just add:
+
+- The width
+- The height
+- The embed ID
+
+```haml
+%slide.slide--video
+  .middle.tac
+    .slide-video
+      %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
 ```
 
 ## Slide Transitions
