@@ -9,4 +9,5 @@
 #= require directives/slideLoader
 #= require directives/slides
 #= require directives/slide
+#= require directives/ytVideo
 
