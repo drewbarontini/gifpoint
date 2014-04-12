@@ -1,4 +1,4 @@
-@presenter.directive 'ytVideo', ($sce) ->
+@presenter.directive 'ytVideo', ['$sce', ($sce) ->
   restrict: 'E'
   replace: true
   scope:
@@ -11,4 +11,4 @@
 
   link: (scope, element, attrs) ->
     scope.video = $sce.trustAsResourceUrl("http://www.youtube.com/embed/#{attrs.videoSrc}?controls=0&showinfo=0")
-
+]

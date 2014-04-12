@@ -1,4 +1,4 @@
-@presenter.directive 'slideLoader', ($timeout) ->
+@presenter.directive 'slideLoader', ['$timeout', ($timeout) ->
   restrict: 'E'
   replace: true
   scope: {}
@@ -10,3 +10,4 @@
   link: (scope, element, attrs) ->
     $timeout ->
       scope.indexTemplate = 'index'
+]
