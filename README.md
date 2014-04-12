@@ -111,9 +111,10 @@ Here are some different slide types you can use:
 %slide.slide--light
   .slide-content
     .middle.middle--auto
-      - code('sass') do
-        :plain
-          // Code goes here...
+      :code
+        # lang: sass
+
+        // Code goes here...
 ```
 
 #### Positioning

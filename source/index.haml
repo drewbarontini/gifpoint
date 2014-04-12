@@ -77,20 +77,21 @@
   %slide
     .slide-content
       .middle.middle--auto
-        - code('sass') do
-          :plain
-            // *************************************
-            //
-            //   Card
-            //   -> Individual style containers
-            //
-            // *************************************
+        :code
+          # lang: sass
 
-            .card
-              @extend .bci
-              @extend .por
-              @extend .ram
-              padding: $b-whitespace
+          // *************************************
+          //
+          //   Card
+          //   -> Individual style containers
+          //
+          // *************************************
+
+          .card
+            @extend .bci
+            @extend .por
+            @extend .ram
+            padding: $b-whitespace
 
   %slide
     .slide-content
