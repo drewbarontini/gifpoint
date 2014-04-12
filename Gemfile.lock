@@ -65,10 +65,6 @@ GEM
       rack-livereload (~> 0.3.15)
     middleman-minify-html (3.1.1)
       middleman-core (~> 3.0)
-    middleman-ngmin (0.4.1)
-      execjs (~> 2.0.2)
-      middleman-core (~> 3.2)
-      middleman-sprockets (~> 3.2)
     middleman-sprockets (3.3.2)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -123,5 +119,4 @@ DEPENDENCIES
   middleman (= 3.3.0)
   middleman-livereload (~> 3.3.0)
   middleman-minify-html
-  middleman-ngmin
   middleman-syntax

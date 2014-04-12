@@ -24,7 +24,6 @@ set :fonts_dir, 'assets/fonts'
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  activate :ngmin
-  #activate :minify_javascript
+  activate :minify_javascript
   activate :relative_assets
 end
