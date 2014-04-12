@@ -1,4 +1,4 @@
-@presenter.factory 'Hotkeys', ['$document', ($document) ->
+@presenter.factory 'Hotkeys', ($document) ->
   keys: {
     'left'   : 37
     'right'  : 39
@@ -13,4 +13,4 @@
 
   off: () =>
     $document.off
-]
+

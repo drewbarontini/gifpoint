@@ -6,7 +6,7 @@
   }
   transclude: true
 
-  controller: ['$scope', '$stateParams', '$state', '$location', ($scope, $stateParams, $state, $location) ->
+  controller: ($scope, $stateParams, $state, $location) ->
     $scope.slides = []
     $scope.currentSlide = $stateParams.index || 1
     $scope.activeSlide = false
@@ -55,7 +55,6 @@
       Hotkeys.off()
 
     @
-  ]
 
   template: """
     <div class='slides' ng-transclude ng-class="{ 'is-previewing': isPreviewing }">

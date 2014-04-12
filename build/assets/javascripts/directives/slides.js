@@ -1,1 +1,82 @@
-!function(){this.presenter.directive("slides",function(e,i){return{restrict:"E",replace:!0,scope:{activeSlide:"@activeSlide"},transclude:!0,controller:function(t,r,n,s,d){var u=this;return t.slides=[],t.currentSlide=r.index||1,t.activeSlide=!1,t.isPreviewing=!1,e.register(e.keys.space,function(){return u.nextSlide()}),e.register(e.keys.right,function(){return u.nextSlide()}),e.register(e.keys.left,function(){return u.prevSlide()}),e.register(e.keys.escape,function(){return u.setPreviewState()}),this.registerSlide=function(e){return t.slides.push(e),u.updateProgress(),e===t.slides[t.currentSlide-1]&&(u.updateProgress(),t.activeSlide=!t.activeSlide),t.slides.indexOf(e)+1},this.nextSlide=function(){t.currentSlide>t.slides.length-1||(t.currentSlide++,n.go("root",{index:t.currentSlide}),d.path("/"+t.currentSlide),u.updateProgress())},this.prevSlide=function(){t.currentSlide<=1||(t.currentSlide--,n.go("root",{index:t.currentSlide}),d.path("/"+t.currentSlide),u.updateProgress())},this.setPreviewState=function(){return t.isPreviewing=!t.isPreviewing,t.$apply()},this.updateProgress=function(){return i.update(parseInt(t.currentSlide)/t.slides.length)},this.isActive=function(e){return e===parseInt(t.currentSlide)},t.$on("$destroy",function(){return e.off()}),this},template:"<div class='slides' ng-transclude ng-class=\"{ 'is-previewing': isPreviewing }\">\n\n</div>"}})}.call(this);
+(function () {
+  this.presenter.directive('slides', function (Hotkeys, Progress) {
+    return {
+      restrict: 'E',
+      replace: true,
+      scope: { activeSlide: '@activeSlide' },
+      transclude: true,
+      controller: function ($scope, $stateParams, $state, $location) {
+        $scope.slides = [];
+        $scope.currentSlide = $stateParams.index || 1;
+        $scope.activeSlide = false;
+        $scope.isPreviewing = false;
+        Hotkeys.register(Hotkeys.keys.space, function (_this) {
+          return function () {
+            return _this.nextSlide();
+          };
+        }(this));
+        Hotkeys.register(Hotkeys.keys.right, function (_this) {
+          return function () {
+            return _this.nextSlide();
+          };
+        }(this));
+        Hotkeys.register(Hotkeys.keys.left, function (_this) {
+          return function () {
+            return _this.prevSlide();
+          };
+        }(this));
+        Hotkeys.register(Hotkeys.keys.escape, function (_this) {
+          return function () {
+            return _this.setPreviewState();
+          };
+        }(this));
+        this.registerSlide = function (_this) {
+          return function (slide) {
+            $scope.slides.push(slide);
+            _this.updateProgress();
+            if (slide === $scope.slides[$scope.currentSlide - 1]) {
+              _this.updateProgress();
+              $scope.activeSlide = !$scope.activeSlide;
+            }
+            return $scope.slides.indexOf(slide) + 1;
+          };
+        }(this);
+        this.nextSlide = function (_this) {
+          return function () {
+            if (!($scope.currentSlide > $scope.slides.length - 1)) {
+              $scope.currentSlide++;
+              $state.go('root', { index: $scope.currentSlide });
+              $location.path('/' + $scope.currentSlide);
+              _this.updateProgress();
+            }
+          };
+        }(this);
+        this.prevSlide = function (_this) {
+          return function () {
+            if (!($scope.currentSlide <= 1)) {
+              $scope.currentSlide--;
+              $state.go('root', { index: $scope.currentSlide });
+              $location.path('/' + $scope.currentSlide);
+              _this.updateProgress();
+            }
+          };
+        }(this);
+        this.setPreviewState = function () {
+          $scope.isPreviewing = !$scope.isPreviewing;
+          return $scope.$apply();
+        };
+        this.updateProgress = function () {
+          return Progress.update(parseInt($scope.currentSlide) / $scope.slides.length);
+        };
+        this.isActive = function (index) {
+          return index === parseInt($scope.currentSlide);
+        };
+        $scope.$on('$destroy', function () {
+          return Hotkeys.off();
+        });
+        return this;
+      },
+      template: '<div class=\'slides\' ng-transclude ng-class="{ \'is-previewing\': isPreviewing }">\n\n</div>'
+    };
+  });
+}.call(this));

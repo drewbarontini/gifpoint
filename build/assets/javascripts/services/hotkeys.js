@@ -1,1 +1,27 @@
-!function(){this.presenter.factory("Hotkeys",function(t){return{keys:{left:37,right:39,space:32,escape:27},register:function(e,n){return t.keydown(function(t){switch(t.which){case e:return n()}})},off:function(){return t.off}}})}.call(this);
+(function () {
+  this.presenter.factory('Hotkeys', function ($document) {
+    return {
+      keys: {
+        'left': 37,
+        'right': 39,
+        'space': 32,
+        'escape': 27
+      },
+      register: function (_this) {
+        return function (key, cb) {
+          return $document.keydown(function (e) {
+            switch (e.which) {
+            case key:
+              return cb();
+            }
+          });
+        };
+      }(this),
+      off: function (_this) {
+        return function () {
+          return $document.off;
+        };
+      }(this)
+    };
+  });
+}.call(this));
