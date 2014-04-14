@@ -127,7 +127,7 @@ Here are some different slide types you can use:
     .middle
       %h1 Slide Title
 
-/ Middle Center
+/ Middle Center (text)
 %slide
   .slide-content
     .middle.tac
@@ -143,6 +143,12 @@ Here are some different slide types you can use:
 %slide
   .slide-content
     .bottom.tac
+      %h1 Slide Title
+      
+/ Bottom Right
+%slide
+  .slide-content
+    .bottom.right
       %h1 Slide Title
 ```
 
