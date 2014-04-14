@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.6.0
+04/14/14
+
+- Touch support
+
 ## v0.5.0
 04/11/14
 
