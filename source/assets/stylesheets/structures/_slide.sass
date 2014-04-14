@@ -159,11 +159,12 @@
 
 // ----- No Transition ----- //
 
-.slide.is-active.noTransition
-  @extend .noTransition
-
-  .slide-content
+.no-touch
+  .slide.is-active.noTransition
     @extend .noTransition
+
+    .slide-content
+      @extend .noTransition
 
 // -------------------------------------
 //   Scaffolding
