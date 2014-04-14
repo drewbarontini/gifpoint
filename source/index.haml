@@ -3,43 +3,50 @@
   %slide.slide--title
     .slide-content
       .middle.tac
-        %h1 Slide Title
+        %h1 Presenter
+        %p Drew Barontini &mdash; @drewbarontini
 
   %slide
     .slide-content
       .middle.middle--lrg.tac
-        %h1.mbf Another Title
-        %p This is a subtitle.
+        %h1 Slide Title
+        %p This is standard slide.
 
   %slide.slide--light
     .slide-content
       .middle.tac
         %h1 Light
+        %p This is a light slide.
 
   %slide.slide--dark
     .slide-content
       .middle.tac
         %h1 Dark
+        %p This is a dark slide.
 
   %slide.slide--subdue
     .slide-content
       .middle.tac
         %h1 Subdued
+        %p This is a subdued slide.
 
   %slide.slide--success
     .slide-content
       .middle.tac
         %h1 Success
+        %p This is a success slide.
 
   %slide.slide--error
     .slide-content
       .middle.tac
         %h1 Error
+        %p This is an error slide.
 
   %slide.slide--warning
     .slide-content
       .middle.tac
         %h1 Warning
+        %p This is a warning slide.
 
   %slide
     .slide-content
@@ -101,45 +108,59 @@
           text here that fills up more space?"
         %p &mdash; Drew Barontini
 
+  %slide.slide--fade(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+    .slide-content
+      .middle.tac
+        %h1 Slide Title
+        %p This is a faded background image.
+
   %slide.slide--fade.slide--fade--dark(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
+        %p This is a faded, dark background image.
 
   %slide.slide--fade.slide--fade--light(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
-
-  %slide.slide--fade.slide--fade--highlight(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
-    .slide-content
-      .middle.tac
-        %h1 Slide Title
+        %p This is a faded, light background image.
 
   %slide.slide--fade.slide--fade--subdue(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
+        %p This is a faded, subdued background image.
 
   %slide.slide--fade.slide--fade--success(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
+        %p This is a faded, success background image.
 
   %slide.slide--fade.slide--fade--error(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
+        %p This is a faded, error background image.
 
   %slide.slide--fade.slide--fade--warning(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
     .slide-content
       .middle.tac
         %h1 Slide Title
+        %p This is a faded, warning background image.
 
-  %slide(img='http://gificiency.com/m/angry-batman.gif')
+  %slide.slide--dark(img='http://gificiency.com/m/angry-batman.gif')
     .slide-content
       .bottom
-        %h1.tci GIF
+        %h1.mbf GIF
+        %p A fullscreen GIF image.
+
+  %slide.slide--fade.slide--fade--error(img='http://gificiency.com/m/angry-batman.gif')
+    .slide-content
+      .bottom
+        %h1.mbf GIF
+        %p A fullscreen GIF image with fade.
 
   %slide.slide--fade.slide--fade--light(img='http://gificiency.com/m/dance-abed.gif')
     .slide-content
@@ -147,7 +168,12 @@
         %h1 GIF
         %p This is some more description text.
 
-  %slide.slide--tile(img='http://gificiency.com/m/what-bored.gif')
+  %slide.slide--dark.slide--tile(img='http://gificiency.com/m/what-bored.gif')
+    .slide-content
+      .middle.tac
+        .card.card--dark
+          %h1.mbf Slide Title
+          %p.mbf A fullscreen, tiled GIF image.
 
   %slide.slide--fade.slide--fade--dark(img='http://gificiency.com/m/happy-hulk.gif')
     .slide-content
@@ -155,4 +181,8 @@
       %p This is some more description text.
 
   %slide(img='http://gificiency.com/m/excited-parks.gif')
+    .slide-content
+      .bottom.full.tac
+        .card
+          %p.mbf= link_to 'http://github.com/drewbarontini/presenter', 'http://github.com/drewbarontini/presenter', class: 'bdrn'
 
