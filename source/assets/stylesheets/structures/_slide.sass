@@ -55,42 +55,41 @@
 
 // Dark
 
-.slide.slide--fade--dark
+.slide.slide--fade.slide--fade--dark
   @extend .tci
   &::after
     background: #000
 
 // Error
 
-.slide.slide--fade--error
+.slide.slide--fade.slide--fade--error
   @extend .tci
   &::after
     @extend .bce
 
 // Light
 
-.slide.slide--fade--light
-  color: $c-base
+.slide.slide--fade.slide--fade--light
+  @extend .tcb
   &::after
     @extend .bci
 
 // Subdue
 
-.slide.slide--fade--subdue
-  @extend .tcb
+.slide.slide--fade.slide--fade--subdue
   &::after
     @extend .bcs
 
 // Success
 
-.slide.slide--fade--success
+.slide.slide--fade.slide--fade--success
   @extend .tci
   &::after
     @extend .bcu
 
 // Warning
 
-.slide.slide--fade--warning
+.slide.slide--fade.slide--fade--warning
   @extend .tci
   &::after
     @extend .bcw
