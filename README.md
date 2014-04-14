@@ -144,7 +144,7 @@ Here are some different slide types you can use:
   .slide-content
     .bottom.tac
       %h1 Slide Title
-      
+
 / Bottom Right
 %slide
   .slide-content
