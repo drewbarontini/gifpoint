@@ -9,8 +9,6 @@
   @extend .bcl
   @extend .fauxHide
   @extend .stretch
-  @if $slide-transition
-    +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -19,6 +17,9 @@
   overflow: hidden
   width: 100%
   z-index: 10
+  .no-touch &
+    @if $slide-transition
+      +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
 
 // -------------------------------------
 //   Modifiers
@@ -145,13 +146,16 @@
 
 .slide.is-active
   @extend .fauxShow
-  @if $slide-transition
-    +transition(all $slide-transition-speed ease-in-out)
+  overflow: hidden
+  .no-touch &
+    @if $slide-transition
+      +transition(all $slide-transition-speed ease-in-out)
 
   .slide-content
     @extend .fauxShow
-    @if $slide-transition
-      +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
+    .no-touch &
+      @if $slide-transition
+        +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
 
 // ----- No Transition ----- //
 
@@ -171,9 +175,10 @@
   @extend .fauxHide
   @extend .mam
   @extend .stretch
-  @if $slide-transition
-    +transition(all $slide-transition-speed ease-in-out)
   z-index: 10
+  .no-touch &
+    @if $slide-transition
+      +transition(all $slide-transition-speed ease-in-out)
   +respond-to($breakpoint-large)
     margin: 2 * $b-whitespace
 

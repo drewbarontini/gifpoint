@@ -1,2 +1,2 @@
-@presenter = angular.module('Presenter', ['ui.router'])
+@presenter = angular.module('Presenter', ['ui.router', 'ngTouch'])
 

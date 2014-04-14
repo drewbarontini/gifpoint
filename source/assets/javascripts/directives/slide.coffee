@@ -6,7 +6,7 @@
   transclude: true
 
   template: """
-    <section class='slide' ng-transclude ng-class="{ 'is-active': activeSlide() }">
+    <section class='slide' ng-transclude ng-class="{ 'is-active': activeSlide() }" ng-swipe-left='nextSlide()' ng-swipe-right='prevSlide()'>
 
     </section>
   """
@@ -19,4 +19,10 @@
 
     scope.activeSlide = ->
       slidesCtrl.isActive(scope.index)
+
+    scope.nextSlide = ->
+      slidesCtrl.nextSlide()
+
+    scope.prevSlide = ->
+      slidesCtrl.prevSlide()
 
