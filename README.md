@@ -55,7 +55,7 @@ Here are some different slide types you can use:
 %slide
   .slide-content
     .middle.tac
-      %h1.mbf Another Title
+      %h1.mbxs Another Title
       %p This is a subtitle.
 
 / Image
@@ -188,7 +188,7 @@ Here are some different slide types you can use:
 %slide
   .slide-content
     .bottom
-      %blockquote
+      %blockquote.mbxs
         "What would happen if I put some longer, more thought-provoking
         text here that fills up more space?"
       %p &mdash; Drew Barontini
@@ -201,42 +201,42 @@ Here are some different slide types you can use:
 %slide.slide--fade(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 
 / Dark
 %slide.slide--fade.slide--fade--dark(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 
 / Light
 %slide.slide--fade.slide--fade--light(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 
 / Success
 %slide.slide--fade.slide--fade--success(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 
 / Error
 %slide.slide--fade.slide--fade--error(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 
 / Warning
 %slide.slide--fade.slide--fade--warning(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4.mbf Subtitle
+      %p.h4 Subtitle
       %h1 Slide Title
 ```
 
