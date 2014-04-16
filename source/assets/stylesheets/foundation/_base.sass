@@ -23,18 +23,20 @@ body
 // -------------------------------------
 
 ul, p
-  @extend .mbm
+  @extend .mbf
   @extend .mtf
 
 li
   @extend .mbs
   @extend .mtf
+  &:last-child
+    @extend .mbf
 
 pre
   @extend .tfm
 
 blockquote
-  @extend .mbs
+  @extend .mbf
   @extend .tsxl
   @extend .twl
   margin-left: 0
@@ -42,7 +44,7 @@ blockquote
 // ----- Headers ----- //
 
 h1, h2, h3, h4
-  @extend .mbxs
+  @extend .mbf
 
 h1, .h1,
 h2, .h2,
