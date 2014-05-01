@@ -6,11 +6,11 @@
 // *************************************
 
 .card
-  @extend .bci
-  @extend .paxs
-  @extend .por
-  @extend .ram
+  background: $c-invert
+  border-radius: $b-borderRadius
   box-shadow: $b-boxShadow
+  padding: $b-whitespace-xs
+  position: relative
 
 // -------------------------------------
 //   Modifiers
@@ -18,5 +18,5 @@
 
 // ----- Dark ----- //
 
-.card.card--dark
+.card--dark
   background: rgba(#000, 0.75)

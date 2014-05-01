@@ -6,9 +6,9 @@
 // *************************************
 
 .slide
-  @extend .bcl
   @extend .fauxHide
   @extend .stretch
+  background-color: $c-light
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -27,120 +27,120 @@
 
 // ----- Contain ----- //
 
-.slide.slide--contain
+.slide--contain
   background-size: contain
 
 // ----- Dark ----- //
 
-.slide.slide--dark
-  @extend .bcb
-  @extend .tci
+.slide--dark
+  background-color: $c-base
+  color: $c-invert
 
 // ----- Error ----- //
 
-.slide.slide--error
-  @extend .tci
-  @extend .bce
+.slide--error
+  background-color: $c-error
+  color: $c-invert
 
 // ----- Fade ----- //
 
-.slide.slide--fade
-  @extend .tci
+.slide--fade
+  color: $c-invert
   &::after
-    @extend .bch
     @extend .stretch
+    background: $c-highlight
     content: ''
     opacity: $slide--fade-opacity
     z-index: 1
 
 // Dark
 
-.slide.slide--fade.slide--fade--dark
-  @extend .tci
+.slide--fade--dark
+  color: $c-invert
   &::after
-    background: #000
+    background-color: #000
 
 // Error
 
-.slide.slide--fade.slide--fade--error
-  @extend .tci
+.slide--fade--error
+  color: $c-invert
   &::after
-    @extend .bce
+    background-color: $c-error
 
 // Light
 
-.slide.slide--fade.slide--fade--light
-  @extend .tcb
+.slide--fade--light
+  color: $c-base
   &::after
-    @extend .bci
+    background-color: $c-invert
 
 // Subdue
 
-.slide.slide--fade.slide--fade--subdue
+.slide--fade--subdue
   &::after
-    @extend .bcs
+    background-color: $c-subdue
 
 // Success
 
-.slide.slide--fade.slide--fade--success
-  @extend .tci
+.slide--fade--success
+  color: $c-invert
   &::after
-    @extend .bcu
+    background-color: $c-success
 
 // Warning
 
-.slide.slide--fade.slide--fade--warning
-  @extend .tci
+.slide--fade--warning
+  color: $c-invert
   &::after
-    @extend .bcw
+    background-color: $c-warning
 
 // ----- Light ----- //
 
-.slide.slide--light
-  @extend .bci
-  @extend .tcb
+.slide--light
+  background-color: $c-invert
+  color: $c-base
 
 // ----- Position ----- //
 
-.slide.slide--position--bottom
+.slide--position--bottom
   background-position: bottom
 
 // ----- Subdue ----- //
 
-.slide.slide--subdue
-  @extend .bcs
-  @extend .tcb
+.slide--subdue
+  background-color: $c-subdue
+  color: $c-base
 
 // ----- Success ----- //
 
-.slide.slide--success
-  @extend .tci
+.slide--success
   background: $c-success
+  color: $c-invert
 
 // ----- Tile ----- //
 
-.slide.slide--tile
+.slide--tile
   background-position: top-left
   background-repeat: repeat
   background-size: auto
 
 // ----- Title ----- //
 
-.slide.slide--title
-  @extend .tci
+.slide--title
   background-color: $c-highlight
+  color: $c-invert
 
 // ----- Video ----- //
 
-.slide.slide--video
-  @extend .tci
+.slide--video
   background-color: black
+  color: $c-invert
 
 // ----- Warning ----- //
 
-.slide.slide--warning
-  @extend .tci
-  background: $c-warning
+.slide--warning
+  background-color: $c-warning
+  color: $c-invert
 
 // -------------------------------------
 //   States
@@ -178,24 +178,24 @@
 
 .slide-content
   @extend .fauxHide
-  @extend .mam
   @extend .stretch
+  margin: $b-whitespace
   z-index: 10
   .no-touch &
     @if $slide-transition
       +transition(all $slide-transition-speed ease-in-out)
   +respond-to($breakpoint-large)
-    margin: 2 * $b-whitespace
+    margin: $b-whitespace-l
 
 // ----- Image ----- //
 
 .slide-img
-  @extend .ra
+  border-radius: 50%
 
 // Medium
 
 .slide-img--m
-  @extend .ram
+  border-radius: $b-borderRadius
 
 // ----- Media ----- //
 
@@ -205,10 +205,10 @@
 // ----- Video ----- //
 
 .slide-video
-  @extend .mhc
   height: 0
   max-height: 720px
   max-width: 1280px
+  margin: 0 auto
   padding-bottom: 56.25%
   position: relative
   > iframe

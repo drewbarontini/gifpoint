@@ -6,9 +6,9 @@
 // *************************************
 
 html
-  @extend .tfb
-  @extend .tcb
   background: $c-background
+  color: $c-base
+  font-family: $f-base
   font-size: $b-fontSize
   line-height: $b-lineHeight
 
@@ -23,53 +23,53 @@ body
 // -------------------------------------
 
 ul, p
-  @extend .mbf
-  @extend .mtf
+  margin-bottom: 0
+  margin-top: 0
 
 li
-  @extend .mbs
-  @extend .mtf
+  margin-bottom: $b-whitespace-s
+  margin-top: 0
   &:last-child
-    @extend .mbf
+    margin-bottom: 0
 
 pre
-  @extend .tfm
+  font-family: $f-mono
 
 blockquote
-  @extend .mbf
-  @extend .tsxl
-  @extend .twl
+  font-size: $b-fontSize-xl
+  font-weight: 300
+  margin-bottom: 0
   margin-left: 0
 
 // ----- Headers ----- //
 
 h1, h2, h3, h4
-  @extend .mbf
+  margin-bottom: 0
 
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4
-  @extend .mtf
-  @extend .twb
+  font-weight: bold
   line-height: 1.5
+  margin-top: 0
   > b
-    @extend .db
+    display: block
 
 h1, .h1
-  @extend .tsh1
-  @extend .ttu
   line-height: 1.2
   font-family: $f-header
+  font-size: $b-fontSize-h1
+  text-transform: uppercase
 
 h2, .h2
-  @extend .tsh2
+  font-size: $b-fontSize-h2
 
 h3, .h3
-  @extend .tsh3
+  font-size: $b-fontSize-h3
 
 h4, .h4
-  @extend .tsh4
+  font-size: $b-fontSize-h4
   font-weight: 300
 
 // -------------------------------------
@@ -77,13 +77,13 @@ h4, .h4
 // -------------------------------------
 
 a
-  @extend .tch
   border-bottom: $b-border
+  color: $c-highlight
   text-decoration: none
   &:hover,
   &:focus
-    @extend .tcs
     border-bottom-color: $c-highlight
+    color: $c-subdue
 
 img
   height: auto
