@@ -1,7 +1,10 @@
-# Presenter
+GIFPoint
+========
+
 Middleman, Angular-powered HTML slides
 
-## Setup
+Setup
+-----
 
 First, we need to install `bundler`, `bundle`, and then start the Middleman
 server.
@@ -31,7 +34,8 @@ middleman s
 
 Go to `localhost:4567/#/` and you should see the first slide.
 
-## Creating Slides
+Creating Slides
+---------------
 
 All of the slides are in `source/index.haml`. They are written as Angular
 directives in Haml.
@@ -65,7 +69,7 @@ Here are some different slide types you can use:
       = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
 ```
 
-#### Colors
+### Colors
 
 ```haml
 / Light
@@ -105,7 +109,7 @@ Here are some different slide types you can use:
       %h1 Warning
 ```
 
-#### Code
+### Code
 
 ```haml
 %slide.slide--light
@@ -117,7 +121,7 @@ Here are some different slide types you can use:
         // Code goes here...
 ```
 
-#### Positioning
+### Positioning
 
 
 ```haml
@@ -152,7 +156,7 @@ Here are some different slide types you can use:
       %h1 Slide Title
 ```
 
-#### Grids/Lists
+### Grids/Lists
 
 ```haml
 %slide.slide--light
@@ -171,7 +175,7 @@ Here are some different slide types you can use:
           %li And, finally, another
 ```
 
-#### Longer Text
+### Longer Text
 
 ```haml
 %slide
@@ -182,7 +186,7 @@ Here are some different slide types you can use:
         text here that fills up more space?
 ```
 
-#### Quote
+### Quote
 
 ```haml
 %slide
@@ -194,7 +198,7 @@ Here are some different slide types you can use:
       %p &mdash; Drew Barontini
 ```
 
-#### Image Overlay
+### Image Overlay
 
 ```haml
 / Basic
@@ -240,7 +244,7 @@ Here are some different slide types you can use:
       %h1 Slide Title
 ```
 
-#### Full-screen GIF/Image
+### Full-screen GIF/Image
 
 ```haml
 / Contain
@@ -259,7 +263,7 @@ Here are some different slide types you can use:
 %slide(img="#{image_path('IMAGE_URL')}")
 ```
 
-#### Video (YouTube)
+### Video (YouTube)
 
 You can use the `%yt-video` directive to load a responsive YouTube video. Just add:
 
