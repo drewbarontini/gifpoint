@@ -1,7 +1,7 @@
 GIFPoint
 ========
 
-Middleman, Angular-powered HTML slides
+Middleman, Angular-powered HTML slides that make it super easy to add full-screen GIFs.
 
 Setup
 -----
