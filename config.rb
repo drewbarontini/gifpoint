@@ -3,12 +3,7 @@ activate :directory_indexes
 activate :livereload
 activate :syntax
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+set :page_title, 'GIFPoint'
 
 ready do
   sprockets.append_path File.join root, 'bower_components'

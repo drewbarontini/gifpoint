@@ -34,6 +34,11 @@ middleman s
 
 Go to `localhost:4567/#/` and you should see the first slide.
 
+Set Page Title
+--------------
+
+To set the page title, open up `config.rg` and change the `page_title`.
+
 Creating Slides
 ---------------
 
