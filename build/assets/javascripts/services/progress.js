@@ -1,1 +1,1 @@
-(function(){this.presenter.factory("Progress",function(){return{registerProgress:function(r){return function(t){return r.progressCallback=t}}(this),update:function(r){return function(t){return r.progressCallback(t)}}(this)}})}).call(this);
+(function(){this.presenter.factory("Progress",function(){return{registerProgress:function(_this){return function(cb){return _this.progressCallback=cb}}(this),update:function(_this){return function(num){return _this.progressCallback(num)}}(this)}})}).call(this);
