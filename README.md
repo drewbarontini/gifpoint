@@ -210,43 +210,43 @@ Here are some different slide types you can use:
 %slide.slide--fade(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 
 / Dark
 %slide.slide--fade.slide--fade--dark(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 
 / Light
 %slide.slide--fade.slide--fade--light(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 
 / Success
 %slide.slide--fade.slide--fade--success(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 
 / Error
 %slide.slide--fade.slide--fade--error(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 
 / Warning
 %slide.slide--fade.slide--fade--warning(img='IMAGE_URL')
   .slide-content
     .middle.tac
-      %p.h4 Subtitle
-      %h1 Slide Title
+      %h1.mbxs Slide Title
+      %p This is standard slide.
 ```
 
 ### Full-screen GIF/Image
