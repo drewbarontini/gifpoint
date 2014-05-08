@@ -283,7 +283,8 @@ You can use the `%yt-video` directive to load a responsive YouTube video. Just a
       %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
 ```
 
-## Slide Transitions
+Slide Transitions
+-----------------
 
 - Use the `right arrow` or `spacebar` to move right.
 - Use the `left arrow` to move left.
@@ -304,4 +305,16 @@ $slide-transition: false
     .middle.tac
       %h1 Slide Title
 ```
+
+Changing Settings
+-----------------
+
+If you want to alter the design/settings of the application, open up `sourse/assets/stylesheets/_config.sass`, and uncomment any line that you'd like to override. Available variables:
+
+- Base variables for things like `border-width`, `box-shadow`, and `line-height`
+- Base color variables
+- Base font variables, including changing the Goolge `@font-face` header or body font
+- Progress bar `height` and `background-color`
+- All slide type colors (which generally pull from the base color variables) 
+- Slide options for transition `delay`, `speed`, etc.
 

@@ -8,11 +8,12 @@
 .slide
   @extend .fauxHide
   @extend .stretch
-  background-color: $c-light
+  background-color: $slide-background
   background-position: center
   background-repeat: no-repeat
   background-size: cover
   box-shadow: inset 0 (-$progress-height) rgba(#fff, 0.4)
+  color: $slide-color
   height: 100%
   overflow: hidden
   width: 100%
@@ -33,22 +34,22 @@
 // ----- Dark ----- //
 
 .slide--dark
-  background-color: $c-base
-  color: $c-invert
+  background-color: $slide--dark-background
+  color: $slide--dark-color
 
 // ----- Error ----- //
 
 .slide--error
-  background-color: $c-error
-  color: $c-invert
+  background-color: $slide--error-background
+  color: $slide--error-color
 
 // ----- Fade ----- //
 
 .slide--fade
-  color: $c-invert
+  color: $slide--fade-color
   &::after
     @extend .stretch
-    background: $c-highlight
+    background: $slide--fade-background
     content: ''
     opacity: $slide--fade-opacity
     z-index: 1
@@ -56,49 +57,50 @@
 // Dark
 
 .slide--fade--dark
-  color: $c-invert
+  color: $slide--fade--dark-color
   &::after
-    background-color: #000
+    background-color: $slide--fade--dark-background
 
 // Error
 
 .slide--fade--error
-  color: $c-invert
+  color: $slide--fade--error-color
   &::after
-    background-color: $c-error
+    background-color: $slide--fade--error-background
 
 // Light
 
 .slide--fade--light
-  color: $c-base
+  color: $slide--fade--light-color
   &::after
-    background-color: $c-invert
+    background-color: $slide--fade--light-background
 
 // Subdue
 
 .slide--fade--subdue
+  color: $slide--fade--subdue-color
   &::after
-    background-color: $c-subdue
+    background-color: $slide--fade--subdue-background
 
 // Success
 
 .slide--fade--success
-  color: $c-invert
+  color: $slide--fade--success-color
   &::after
-    background-color: $c-success
+    background-color: $slide--fade--success-background
 
 // Warning
 
 .slide--fade--warning
-  color: $c-invert
+  color: $slide--fade--warning-color
   &::after
-    background-color: $c-warning
+    background-color: $slide--fade--warning-background
 
 // ----- Light ----- //
 
 .slide--light
-  background-color: $c-invert
-  color: $c-base
+  background-color: $slide--light-background
+  color: $slide--light-color
 
 // ----- Position ----- //
 
@@ -108,14 +110,14 @@
 // ----- Subdue ----- //
 
 .slide--subdue
-  background-color: $c-subdue
-  color: $c-base
+  background-color: $slide--subdue-background
+  color: $slide--subdue-color
 
 // ----- Success ----- //
 
 .slide--success
-  background: $c-success
-  color: $c-invert
+  background: $slide--success-background
+  color: $slide--success-color
 
 // ----- Tile ----- //
 
@@ -127,20 +129,20 @@
 // ----- Title ----- //
 
 .slide--title
-  background-color: $c-highlight
-  color: $c-invert
+  background-color: $slide--title-background
+  color: $slide--title-color
 
 // ----- Video ----- //
 
 .slide--video
-  background-color: black
-  color: $c-invert
+  background-color: $slide--video-background
+  color: $slide--video-color
 
 // ----- Warning ----- //
 
 .slide--warning
-  background-color: $c-warning
-  color: $c-invert
+  background-color: $slide--warning-background
+  color: $slide--warning-color
 
 // -------------------------------------
 //   States
