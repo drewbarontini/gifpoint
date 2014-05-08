@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.7.0
+05/08/14
+
+- Custom configuration Sass file for altering variables
+
 ## v0.6.0
 04/14/14
 
