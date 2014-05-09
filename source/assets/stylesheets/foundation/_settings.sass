@@ -16,8 +16,11 @@ $f-header-src: 'http://fonts.googleapis.com/css?family=Oswald' !default
 
 // ----- Imports ----- //
 
-@import url($f-body-src)
-@import url($f-header-src)
+@if $f-body-src == $f-header-src
+  @import url($f-body-src)
+@else
+  @import url($f-body-src)
+  @import url($f-header-src)
 
 // -------------------------------------
 //   Variables
