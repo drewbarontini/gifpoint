@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.7.1
+05/08/14
+
+- Smarter configuration options for fonts
+
 ## v0.7.0
 05/08/14
 
