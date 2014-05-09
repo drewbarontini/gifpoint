@@ -313,7 +313,7 @@ If you want to alter the design/settings of the application, open up `sourse/ass
 
 - Base variables for things like `border-width`, `box-shadow`, and `line-height`
 - Base color variables
-- Base font variables, including changing the Goolge `@font-face` header or body font
+- Base font variables, including changing the Google `@font-face` header or body font
 - Progress bar `height` and `background-color`
 - All slide type colors (which generally pull from the base color variables) 
 - Slide options for transition `delay`, `speed`, etc.
