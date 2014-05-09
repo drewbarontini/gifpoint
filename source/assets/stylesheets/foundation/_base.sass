@@ -37,7 +37,7 @@ pre
 
 blockquote
   font-size: $b-fontSize-xl
-  font-weight: 300
+  font-weight: $f-base-light-fontWeight
   margin-bottom: 0
   margin-left: 0
 
@@ -50,7 +50,7 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4
-  font-weight: bold
+  font-weight: $f-header-fontWeight
   line-height: 1.5
   margin-top: 0
   > b
@@ -60,7 +60,8 @@ h1, .h1
   line-height: 1.2
   font-family: $f-header
   font-size: $b-fontSize-h1
-  text-transform: uppercase
+  @if $f-header-uppercase
+    text-transform: uppercase
 
 h2, .h2
   font-size: $b-fontSize-h2
@@ -70,7 +71,7 @@ h3, .h3
 
 h4, .h4
   font-size: $b-fontSize-h4
-  font-weight: 300
+  font-weight: $f-base-light-fontWeight
 
 // -------------------------------------
 //   Inline Content
