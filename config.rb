@@ -7,7 +7,6 @@ activate :syntax
 
 set :page_title, 'GIFPoint'
 
-
 ready do
   sprockets.append_path File.join root, 'bower_components'
 end
