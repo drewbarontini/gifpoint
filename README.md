@@ -306,6 +306,22 @@ $slide-transition: false
       %h1 Slide Title
 ```
 
+Spacing
+-------
+
+By default, no elements have any `margin` or `padding` to  keep the vertical alignment nice and happy. If you want to add spacing to headings, paragraphs, lists, etc., use the utility classes for spacing:
+
+```haml
+%slide
+  .slide-content
+    %h1.mbxs Slide Title
+    %p A description for the slide.
+```
+
+`mbxs` stands for `margin-bottom` `extra-small`, and there are variants for extra-small `xs`, small `s`, medium `m`, large `l`, and extra-large `xl`, for both `margin` and `padding`.
+
+There are other various single-property classes in `source/assets/stylesheets/foundation/_utilities.sass` that you can peruse.
+
 Changing Settings
 -----------------
 
