@@ -107,6 +107,15 @@
 .slide--position--bottom
   background-position: bottom
 
+// ----- Scale ----- //
+
+.slide--scale
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(scale(0.5))
+
 // ----- Subdue ----- //
 
 .slide--subdue
@@ -131,6 +140,24 @@
 .slide--title
   background-color: $slide--title-background
   color: $slide--title-color
+
+// ----- Translate X ----- //
+
+.slide--translateX
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(translateX(50%))
+
+// ----- Translate Y ----- //
+
+.slide--translateY
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(translateY(50%))
 
 // ----- Video ----- //
 
@@ -162,6 +189,33 @@
     .no-touch &
       @if $slide-transition
         +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
+
+// Scale
+
+.slide--scale.is-active
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(scale(1))
+
+// Translate X
+
+.slide--translateX.is-active
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(translateX(0))
+
+// Translate Y
+
+.slide--translateY.is-active
+
+  .slide-content
+    .no-touch &
+      @if $slide-transition
+        +transform(translateY(0))
 
 // ----- No Transition ----- //
 

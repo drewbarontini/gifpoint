@@ -290,6 +290,27 @@ Slide Transitions
 - Use the `left arrow` to move left.
 - Use `escape` to bring up the preview.
 
+### Alternate Slide Effects Per Slide
+
+This will only occur on the `.slide-content` within each slide. If you just have a fullscreen image, or no `.slide-content`, the slide will just use the normal fade in/out transition. If you do have the `.slide-content` section, which you *almost* always should, then you can apply a few different slide transitions per slide, like so:
+
+```haml
+/ Scale
+%slide.slide--scale
+  .slide-content
+    / ...
+
+/ Translate X
+%slide.slide--translateX
+  .slide-content
+    / ...
+
+/ Translate Y
+%slide.slide--translateY
+  .slide-content
+    / ...
+```
+
 ### Remove Transition From All Slides
 
 `source/assets/stylesheets/foundation/_settings.sass`:

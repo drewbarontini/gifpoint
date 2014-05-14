@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.0
+05/14/14
+
+- Adds more slide transitions that can be set per slide
+
 ## v0.7.1
 05/08/14
 

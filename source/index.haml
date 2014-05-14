@@ -6,13 +6,13 @@
         %h1.mbxs GIFPoint
         %p Drew Barontini &mdash; @drewbarontini
 
-  %slide
+  %slide.slide--translateX
     .slide-content
       .middle.middle--lrg.tac
         %h1.mbxs Slide Title
         %p This is standard slide.
 
-  %slide.slide--subdue
+  %slide.slide--subdue.slide--translateY
     .slide-content
       .middle.middle--lrg.tac
         %h1.mbxs.tci.shadowed Cool Slide Title
@@ -77,15 +77,16 @@
             %li Here's another thing
             %li And, finally, another
 
-  %slide
+  %slide.slide--scale
     .slide-content
       .middle.middle--lrg.tac
         = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
 
-  %slide.slide--video
-    .middle.tac
-      .slide-video
-        %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
+  %slide.slide--scale.slide--video
+    .slide-content
+      .middle.tac
+        .slide-video
+          %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
 
   %slide
     .slide-content
