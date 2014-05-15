@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.1
+05/15/14
+
+- Add ability to set a one-off color on a slide
+
 ## v0.8.0
 05/14/14
 

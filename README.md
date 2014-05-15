@@ -283,6 +283,17 @@ You can use the `%yt-video` directive to load a responsive YouTube video. Just a
       %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
 ```
 
+### Per Slide Background Color
+
+If you just want to one-off change the color of a slide, you can use the `color` attribute.
+
+```haml
+%slide(color='#f4f4f4')
+  .slide-content
+    .middle.tac
+      %h1 Slide Title
+```
+
 Slide Transitions
 -----------------
 
