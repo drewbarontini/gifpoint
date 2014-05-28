@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.8.2
+05/28/14
+
+- Make the `shadowed` utility class more robust
+
 ## v0.8.1
 05/15/14
 
