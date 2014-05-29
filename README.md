@@ -14,9 +14,13 @@ gem install bundler
 bundle install
 ```
 
-Next, we need to set up the project dependencies via Bower. If you don't have bower installed:
+Next, we need to set up the project dependencies via Bower. If you don't have Bower installed:
 
 ```bash
+# Install grunt-cli globally
+npm install -g grunt-cli
+
+# Install Bower globally
 npm install -g bower
 ```
 
