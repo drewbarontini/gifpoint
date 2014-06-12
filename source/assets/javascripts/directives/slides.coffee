@@ -10,12 +10,10 @@
     $scope.slides = []
     $scope.currentSlide = $stateParams.index || 1
     $scope.activeSlide = false
-    $scope.isPreviewing = false
 
     Hotkeys.register Hotkeys.keys.space,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.right,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.left,    => @prevSlide()
-    Hotkeys.register Hotkeys.keys.escape,  => @setPreviewState()
 
     @registerSlide = (slide) =>
       $scope.slides.push(slide)
@@ -41,10 +39,6 @@
         @updateProgress()
       return
 
-    @setPreviewState = () ->
-      $scope.isPreviewing = !$scope.isPreviewing
-      $scope.$apply()
-
     @updateProgress = () ->
       Progress.update( parseInt($scope.currentSlide) / $scope.slides.length )
 
@@ -57,7 +51,7 @@
     @
 
   template: """
-    <div class='slides' ng-transclude ng-class="{ 'is-previewing': isPreviewing }">
+    <div class='slides' ng-transclude>
 
     </div>
   """

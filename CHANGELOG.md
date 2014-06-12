@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.9.0
+06/11/14
+
+- Remove the preview state functionality
+
 ## v0.8.3
 06/09/14
 

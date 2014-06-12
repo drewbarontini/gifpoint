@@ -298,7 +298,6 @@ Slide Transitions
 
 - Use the `right arrow` or `spacebar` to move right.
 - Use the `left arrow` to move left.
-- Use `escape` to bring up the preview.
 
 ### Alternate Slide Effects Per Slide
 
