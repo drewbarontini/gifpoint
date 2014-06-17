@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.9.1
+06/11/14
+
+- Update the configuration variables
+
 ## v0.9.0
 06/11/14
 

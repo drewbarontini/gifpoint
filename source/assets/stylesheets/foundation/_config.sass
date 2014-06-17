@@ -11,15 +11,15 @@
 
 // ----- Variables ----- //
 
-$f-body-src: 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic' !default
+$f-base-src: 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic' !default
 $f-header-src: 'http://fonts.googleapis.com/css?family=Oswald' !default
 
 // ----- Imports ----- //
 
-@if $f-body-src == $f-header-src
-  @import url($f-body-src)
+@if $f-base-src == $f-header-src
+  @import url($f-base-src)
 @else
-  @import url($f-body-src)
+  @import url($f-base-src)
   @import url($f-header-src)
 
 // -------------------------------------
@@ -35,25 +35,25 @@ $b-border: $b-borderWidth $b-borderStyle $b-borderColor
 $b-borderRadius: 3px !default
 $b-boxShadow: 0 1px 2px rgba(#222, 0.25) !default
 $b-textShadow: 6px 6px 0 rgba(#000, 0.25), 12px 12px 0 rgba(#000, 0.1) !default
-$b-fontSize: 30px
-$b-fontSize-xs: 60%
-$b-fontSize-s: 80%
-$b-fontSize-m: 100%
-$b-fontSize-l: 150%
-$b-fontSize-xl: 200%
-$b-fontSize-h1: 420%
-$b-fontSize-h2: 320%
-$b-fontSize-h3: 220%
-$b-fontSize-h4: 175%
+$b-fontSize: 30px !default
+$b-fontSize-xs: 60% !default
+$b-fontSize-s: 80% !default
+$b-fontSize-m: 100% !default
+$b-fontSize-l: 150% !default
+$b-fontSize-xl: 200% !default
+$b-fontSize-h1: 420% !default
+$b-fontSize-h2: 320% !default
+$b-fontSize-h3: 220% !default
+$b-fontSize-h4: 175% !default
 $b-lineHeight: 1.5 !default
-$b-minWidth: 23em
-$b-maxWidth: 42em
-$b-transitionSpeed: 0.4s
-$b-whitespace: 1.25em
-$b-whitespace-xs: 0.25 * $b-whitespace
-$b-whitespace-s: 0.5 * $b-whitespace
-$b-whitespace-l: 2 * $b-whitespace
-$b-whitespace-xl: 4 * $b-whitespace
+$b-minWidth: 23em !default
+$b-maxWidth: 42em !default
+$b-transitionSpeed: 0.4s !default
+$b-whitespace: 1.25em !default
+$b-whitespace-xs: 0.25 * $b-whitespace !default
+$b-whitespace-s: 0.5 * $b-whitespace !default
+$b-whitespace-l: 2 * $b-whitespace !default
+$b-whitespace-xl: 4 * $b-whitespace !default
 
 // ----- Colors ----- //
 
@@ -78,7 +78,7 @@ $f-mono: Courier, monospace !default
 
 // ----- Breakpoint ----- //
 
-$breakpoint-large: 1400px
+$breakpoint-large: 1400px !default
 
 // ----- Progress ----- //
 
