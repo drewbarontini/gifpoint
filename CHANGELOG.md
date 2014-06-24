@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.10.1
+06/24/14
+
+- Only go to the next section if there is one registered
+
 ## v0.10.0
 06/24/14
 
