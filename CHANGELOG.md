@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.10.2
+06/24/14
+
+- Fix for the check on a section being registered
+
 ## v0.10.1
 06/24/14
 

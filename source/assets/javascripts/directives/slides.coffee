@@ -16,9 +16,7 @@
     Hotkeys.register Hotkeys.keys.space,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.right,   => @nextSlide()
     Hotkeys.register Hotkeys.keys.left,    => @prevSlide()
-
-    unless $scope.sectionSlides.length == 0
-      Hotkeys.register Hotkeys.keys.s, => @nextSectionSlide()
+    Hotkeys.register Hotkeys.keys.s,       => @nextSectionSlide()
 
     @registerSlide = (slide) =>
       $scope.slides.push(slide)
@@ -44,14 +42,15 @@
       return
 
     @nextSectionSlide = () =>
-      unless $scope.currentSectionSlide == $scope.sectionSlides.length - 1
-        $scope.currentSectionSlide++
-        @setCurrentSectionSlide()
-        @setLocation()
-      else
-        $scope.currentSectionSlide = 0
-        @setCurrentSectionSlide()
-        @setLocation()
+      unless $scope.sectionSlides.length == 0
+        unless $scope.currentSectionSlide == $scope.sectionSlides.length - 1
+          $scope.currentSectionSlide++
+          @setCurrentSectionSlide()
+          @setLocation()
+        else
+          $scope.currentSectionSlide = 0
+          @setCurrentSectionSlide()
+          @setLocation()
       return
 
     @setLocation = () =>
