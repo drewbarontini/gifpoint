@@ -1,6 +1,6 @@
 %slides
 
-  %slide.slide--title
+  %slide.slide--title(section)
     .slide-content
       .middle.tac
         %h1.mbxs GIFPoint
@@ -18,7 +18,7 @@
         %h1.mbxs.tci.shadowed Cool Slide Title
         %p.tci It has a shadow and stuff!
 
-  %slide.slide--light
+  %slide.slide--light(section)
     .slide-content
       .middle.tac
         %h1.mbxs Light
@@ -54,7 +54,7 @@
         %h1.mbxs Warning
         %p This is a warning slide.
 
-  %slide
+  %slide(section)
     .slide-content
       %h1.mbxs List of Things
       %ul
@@ -77,7 +77,7 @@
             %li Here's another thing
             %li And, finally, another
 
-  %slide.slide--scale
+  %slide.slide--scale(section)
     .slide-content
       .middle.middle--lrg.tac
         = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
@@ -88,7 +88,7 @@
         .slide-video
           %yt-video(width="1280" height="720" video-src="xZY43QSx3Fk")
 
-  %slide
+  %slide(section)
     .slide-content
       .middle.middle--auto
         :code
@@ -107,7 +107,7 @@
             @extend .ram
             padding: $b-whitespace
 
-  %slide
+  %slide(section)
     .slide-content
       .bottom
         %blockquote.mbxs
@@ -115,7 +115,7 @@
           text here that fills up more space?"
         %p &mdash; Drew Barontini
 
-  %slide.slide--fade(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg')
+  %slide.slide--fade(img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg' section)
     .slide-content
       .middle.tac
         %h1.mbxs Slide Title
@@ -157,7 +157,7 @@
         %h1.mbxs Slide Title
         %p This is a faded, warning background image.
 
-  %slide.slide--dark(img='http://gificiency.com/m/angry-batman.gif')
+  %slide.slide--dark(img='http://gificiency.com/m/angry-batman.gif' section)
     .slide-content
       .bottom
         %h1 GIF

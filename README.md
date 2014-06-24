@@ -336,6 +336,19 @@ $slide-transition: false
       %h1 Slide Title
 ```
 
+Defining Sections
+-----------------
+
+When you're slides get long enough, you might want to jump through sections (like chapters of a book) more easily. Add the following to your `%slide` to define a section:
+
+```haml
+%slide(section)
+  .slide-content
+    %h1 Slide Title
+```
+
+Just add the `section` attribute, and now you can cycle through defined sections using the `S` keyboard shortcut.
+
 Spacing
 -------
 

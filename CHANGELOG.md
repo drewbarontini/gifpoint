@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.10.0
+06/24/14
+
+- Refactor the Slides Controller (DRY it up!)
+- Add new "Jump to Next Section" functionality
+
 ## v0.9.1
 06/11/14
 

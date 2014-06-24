@@ -4,6 +4,7 @@
     'right'  : 39
     'space'  : 32
     'escape' : 27
+    's'      : 83
   }
 
   register: (key, cb) =>
