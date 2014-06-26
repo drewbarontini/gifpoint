@@ -1,6 +1,21 @@
 Changelog
 =========
 
+0.10.4 - 2014-06-26
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Use smart quotes for `blockquote`s
+
 0.10.3 - 2014-06-26
 -------------------
 
