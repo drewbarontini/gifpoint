@@ -1,6 +1,21 @@
 Changelog
 =========
 
+0.10.3 - 2014-06-26
+-------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- The `blockquote` spacing
+
 0.10.2 - 2014-06-24
 -------------------
 
