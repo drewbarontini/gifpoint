@@ -5,141 +5,16 @@
 //
 // *************************************
 
-// ----- Auto ----- //
-
-.auto
-  width: auto
-
-// ----- Bottom ----- //
-
-.bottom
-  bottom: 0
-  left: 0
-  position: absolute
-
-// ----- Full ----- //
-
-.full
-  width: 100%
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
-
-// ----- Debug ----- //
-
-.debug
-  background-color: pink !important
-
-// ----- Ellipsis ----- //
-
-.ellipsis
-  overflow: hidden
-  text-overflow: ellipsis
-  white-space: nowrap
-
-// ----- Faux Hide ----- //
-
-.fauxHide
-  height: 0
-  opacity: 0
-  overflow: hidden
-  visibility: hidden
-
-// ----- Faux Show ----- //
-
-.fauxShow
-  height: auto
-  opacity: 1
-  overflow: visible
-  visibility: visible
-
-// ----- Image Replacement ----- //
-
-.ir
-  background-color: transparent
-  border: 0
-  overflow: hidden
-  &::before
-    content: ''
-    display: block
-    width: 0
-    height: 150%
-
-// ----- List Reset ----- //
-
-.lr
-  list-style-type: none
-  margin: 0
-  padding: 0
-
-// ----- Middle ----- //
-
-.middle
-  +transform(translate(-50%, -50%))
-  left: 50%
-  position: absolute
-  top: 50%
-  width: 100%
-
-// Auto
-
-.middle.middle--auto
-  @extend .auto
-
-// Medium
-
-.middle.middle--med
-  width: 60%
-
-// ----- No Transition ----- //
-
-.noTransition
-  +transition(none)
-
-// ----- Right ----- //
-
-.right
-  left: auto
-  right: 0
-  position: absolute
-
-// ----- Shadowed ----- //
-
-.shadowed
-  text-shadow: $b-textShadow
-
-// ----- Stretch ----- //
-
-.stretch
-  bottom: 0
-  left: 0
-  position: absolute
-  right: 0
-  top: 0
-
-// ----- Valign ----- //
-
-.valign
-  +transform(translateY(-50%))
-  position: absolute
-  top: 50%
-
 // -------------------------------------
 //   Background
 // -------------------------------------
 
-.bcb
-  background-color: $c-base
 .bce
   background-color: $c-error
 .bch
   background-color: $c-highlight
 .bci
-  background-color: $c-invert
+  background-color: $c-background-invert
 .bcl
   background-color: $c-light
 .bcs
@@ -167,11 +42,11 @@
 // ----- Inverted ----- //
 
 .bdri
-  border: $b-borderWidth $b-borderStyle $c-invert
+  border: $b-borderWidth $b-borderStyle $c-text-invert
 .bdrbi
-  border-bottom: $b-borderWidth $b-borderStyle $c-invert
+  border-bottom: $b-borderWidth $b-borderStyle $c-text-invert
 .bdrti
-  border-top: $b-borderWidth $b-borderStyle $c-invert
+  border-top: $b-borderWidth $b-borderStyle $c-text-invert
 
 // -------------------------------------
 //   Display
@@ -193,24 +68,24 @@
 // ----- All ----- //
 
 .mas
-  margin: $b-whitespace-s
+  margin: $b-space-s
 .mam
-  margin: $b-whitespace
+  margin: $b-space
 .mal
-  margin: $b-whitespace-l
+  margin: $b-space-l
 
 // ----- Bottom ----- //
 
 .mbf
   margin-bottom: 0
 .mbxs
-  margin-bottom: $b-whitespace-xs
+  margin-bottom: $b-space-xs
 .mbs
-  margin-bottom: $b-whitespace-s
+  margin-bottom: $b-space-s
 .mbm
-  margin-bottom: $b-whitespace
+  margin-bottom: $b-space
 .mbl
-  margin-bottom: $b-whitespace-l
+  margin-bottom: $b-space-l
 
 // ----- Horizontal ----- //
 
@@ -223,29 +98,29 @@
 .mlf
   margin-left: 0
 .mls
-  margin-left: $b-whitespace-s
+  margin-left: $b-space-s
 .mlm
-  margin-left: $b-whitespace
+  margin-left: $b-space
 
 // ----- Right ----- //
 
 .mrf
   margin-right: 0
 .mrs
-  margin-right: $b-whitespace-s
+  margin-right: $b-space-s
 .mrm
-  margin-right: $b-whitespace
+  margin-right: $b-space
 
 // ----- Top ----- //
 
 .mtf
   margin-top: 0
 .mts
-  margin-top: $b-whitespace-s
+  margin-top: $b-space-s
 .mtm
-  margin-top: $b-whitespace
+  margin-top: $b-space
 .mtl
-  margin-top: $b-whitespace-l
+  margin-top: $b-space-l
 
 // -------------------------------------
 //   Padding
@@ -254,29 +129,29 @@
 // ----- All ----- //
 
 .paxs
-  padding: $b-whitespace-xs
+  padding: $b-space-xs
 .pas
-  padding: $b-whitespace-s
+  padding: $b-space-s
 .pam
-  padding: $b-whitespace
+  padding: $b-space
 
 // ----- Bottom ----- //
 
 .pbxs
-  padding-bottom: $b-whitespace-xs
+  padding-bottom: $b-space-xs
 .pbs
-  padding-bottom: $b-whitespace-s
+  padding-bottom: $b-space-s
 .pbm
-  padding-bottom: $b-whitespace
+  padding-bottom: $b-space
 
 // ----- Top ----- //
 
 .ptxs
-  padding-top: $b-whitespace-xs
+  padding-top: $b-space-xs
 .pts
-  padding-top: $b-whitespace-s
+  padding-top: $b-space-s
 .ptm
-  padding-top: $b-whitespace
+  padding-top: $b-space
 
 // -------------------------------------
 //   Opacity
@@ -327,18 +202,18 @@
 
 // ----- Color ----- //
 
-.tcb
-  color: $c-base
 .tcg
   color: $c-background
 .tch
   color: $c-highlight
 .tci
-  color: $c-invert
+  color: $c-text-invert
 .tce
   color: $c-error
 .tcs
   color: $c-subdue
+.tct
+  color: $c-text
 .tcu
   color: $c-success
 .tcw
@@ -352,11 +227,16 @@
 // ----- Family ----- //
 
 .tfb
-  font-family: $f-base
+  font-family: $b-fontFamily
 .tfh
-  font-family: $f-header
+  font-family: $b-fontFamily-heading
 .tfm
-  font-family: $f-mono
+  font-family: $b-fontFamily-mono
+
+// ----- Shadow ----- //
+
+.tsa
+  text-shadow: $b-textShadow
 
 // ----- Size ----- //
 
@@ -405,6 +285,6 @@
 .twb
   font-weight: bold
 .twl
-  font-weight: $f-base-light-fontWeight
+  font-weight: $b-fontFamily-light-fontWeight
 .twn
   font-weight: normal

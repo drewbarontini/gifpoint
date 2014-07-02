@@ -7,8 +7,8 @@
 
 html
   background: $c-background
-  color: $c-base
-  font-family: $f-base
+  color: $c-text
+  font-family: $b-fontFamily
   font-size: $b-fontSize
   line-height: $b-lineHeight
 
@@ -27,17 +27,17 @@ ul, p
   margin-top: 0
 
 li
-  margin-bottom: $b-whitespace-s
+  margin-bottom: $b-space-s
   margin-top: 0
   &:last-child
     margin-bottom: 0
 
 pre
-  font-family: $f-mono
+  font-family: $b-fontFamily-mono
 
 blockquote
   font-size: $b-fontSize-xl
-  font-weight: $f-base-light-fontWeight
+  font-weight: $b-fontFamily-light-fontWeight
   margin: 0
   &::before,
   &::after
@@ -56,7 +56,7 @@ h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4
-  font-weight: $f-header-fontWeight
+  font-weight: $b-fontFamily-heading-fontWeight
   line-height: 1.5
   margin-top: 0
   > b
@@ -64,9 +64,9 @@ h4, .h4
 
 h1, .h1
   line-height: 1.2
-  font-family: $f-header
+  font-family: $b-fontFamily-heading
   font-size: $b-fontSize-h1
-  @if $f-header-uppercase
+  @if $b-fontFamily-heading-uppercase
     text-transform: uppercase
 
 h2, .h2
@@ -77,7 +77,7 @@ h3, .h3
 
 h4, .h4
   font-size: $b-fontSize-h4
-  font-weight: $f-base-light-fontWeight
+  font-weight: $b-fontFamily-light-fontWeight
 
 // -------------------------------------
 //   Inline Content

@@ -6,6 +6,22 @@
 // *************************************
 
 // -------------------------------------
+//   Functions
+// -------------------------------------
+
+// ----- Em ----- //
+// -> Converts pixel value to an em
+//
+// $target - the target pixel size
+// $context - the context font-size
+
+@function em($target, $context: $b-fontSize)
+  @if ($target == 0)
+    @return 0
+  @else
+    @return ($target / $context) * 1em
+
+// -------------------------------------
 //   Mixins
 // -------------------------------------
 
@@ -90,4 +106,126 @@
 =transition-transform($args...)
   -webkit-transition: -webkit-transform $args
   transition: transform $args
+
+// -------------------------------------
+//   Extends
+// -------------------------------------
+
+// ----- Auto ----- //
+
+.auto
+  width: auto
+
+// ----- Bottom ----- //
+
+.bottom
+  bottom: 0
+  left: 0
+  position: absolute
+
+// ----- Full ----- //
+
+.full
+  width: 100%
+
+// ----- Clearfix ----- //
+
+.group::after
+  clear: both
+  content: ''
+  display: table
+
+// ----- Debug ----- //
+
+.debug
+  background-color: pink !important
+
+// ----- Ellipsis ----- //
+
+.ellipsis
+  overflow: hidden
+  text-overflow: ellipsis
+  white-space: nowrap
+
+// ----- Faux Hide ----- //
+
+.fauxHide
+  height: 0
+  opacity: 0
+  overflow: hidden
+  visibility: hidden
+
+// ----- Faux Show ----- //
+
+.fauxShow
+  height: auto
+  opacity: 1
+  overflow: visible
+  visibility: visible
+
+// ----- Image Replacement ----- //
+
+.ir
+  background-color: transparent
+  border: 0
+  overflow: hidden
+  &::before
+    content: ''
+    display: block
+    width: 0
+    height: 150%
+
+// ----- List Reset ----- //
+
+.lr
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+// ----- Middle ----- //
+
+.middle
+  +transform(translate(-50%, -50%))
+  left: 50%
+  position: absolute
+  top: 50%
+  width: 100%
+
+// Auto
+
+.middle.middle--auto
+  @extend .auto
+
+// Medium
+
+.middle.middle--med
+  width: 60%
+
+// ----- No Transition ----- //
+
+.noTransition
+  +transition(none)
+
+// ----- Right ----- //
+
+.right
+  left: auto
+  right: 0
+  position: absolute
+
+// ----- Stretch ----- //
+
+.stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
+
+// ----- Valign ----- //
+
+.valign
+  +transform(translateY(-50%))
+  position: absolute
+  top: 50%
 

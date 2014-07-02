@@ -11,133 +11,151 @@
 
 // ----- Variables ----- //
 
-$f-base-src: 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic' !default
-$f-header-src: 'http://fonts.googleapis.com/css?family=Oswald' !default
+$b-fontFamily-src: 'http://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic' !default
+$b-fontFamily-heading-src: 'http://fonts.googleapis.com/css?family=Oswald' !default
 
 // ----- Imports ----- //
 
-@if $f-base-src == $f-header-src
-  @import url($f-base-src)
+@if $b-fontFamily-src == $b-fontFamily-heading-src
+  @import url($b-fontFamily-src)
 @else
-  @import url($f-base-src)
-  @import url($f-header-src)
+  @import url($b-fontFamily-src)
+  @import url($b-fontFamily-heading-src)
 
 // -------------------------------------
-//   Variables
+//   Colors
 // -------------------------------------
 
 // ----- Base ----- //
 
-$b-borderColor: #292b2f !default
+$c-background-invert: #fff !default
+$c-background: #f2f2f2 !default
+$c-error: #86341d !default
+$c-highlight: #2980b9 !default
+$c-light: #f2f2f2 !default
+$c-subdue: #999 !default
+$c-success: #238063 !default
+$c-text-invert: #fff !default
+$c-text: #292b2f !default
+$c-warning: #c18f2a !default
+
+// -------------------------------------
+//   Base
+// -------------------------------------
+
+// ----- Borders & Box Shadow ----- //
+
+$b-borderColor: $c-text !default
 $b-borderStyle: solid !default
 $b-borderWidth: 4px !default
 $b-border: $b-borderWidth $b-borderStyle $b-borderColor
 $b-borderRadius: 3px !default
 $b-boxShadow: 0 1px 2px rgba(#222, 0.25) !default
-$b-textShadow: 6px 6px 0 rgba(#000, 0.25), 12px 12px 0 rgba(#000, 0.1) !default
-$b-fontSize: 30px !default
-$b-fontSize-xs: 60% !default
-$b-fontSize-s: 80% !default
-$b-fontSize-m: 100% !default
-$b-fontSize-l: 150% !default
-$b-fontSize-xl: 200% !default
+
+// ----- Typography ----- //
+
+$b-fontFamily-heading-fontWeight: bold !default
+$b-fontFamily-heading-uppercase: true !default
+$b-fontFamily-heading: 'Oswald', sans-serif !default
+$b-fontFamily-light-fontWeight: 300 !default
+$b-fontFamily-mono: Courier, monospace !default
+$b-fontFamily: 'Merriweather', sans-serif !default
 $b-fontSize-h1: 420% !default
 $b-fontSize-h2: 320% !default
 $b-fontSize-h3: 220% !default
 $b-fontSize-h4: 175% !default
+$b-fontSize-l: 150% !default
+$b-fontSize-m: 100% !default
+$b-fontSize-s: 80% !default
+$b-fontSize-xl: 200% !default
+$b-fontSize-xs: 60% !default
+$b-fontSize: 30px !default
 $b-lineHeight: 1.5 !default
-$b-minWidth: 23em !default
-$b-maxWidth: 42em !default
+$b-textShadow: 6px 6px 0 rgba(#000, 0.25), 12px 12px 0 rgba(#000, 0.1) !default
+
+// ----- Sizing ----- //
+
+$b-minWidth: em(400px) !default
+$b-maxWidth: em(680px)default
+$b-space: em(40px) !default
+$b-space-xs: 0.25 * $b-space !default
+$b-space-s: 0.5 * $b-space !default
+$b-space-l: 2 * $b-space !default
+$b-space-xl: 4 * $b-space !default
+
+// ----- Settings ----- //
+
 $b-transitionSpeed: 0.4s !default
-$b-whitespace: 1.25em !default
-$b-whitespace-xs: 0.25 * $b-whitespace !default
-$b-whitespace-s: 0.5 * $b-whitespace !default
-$b-whitespace-l: 2 * $b-whitespace !default
-$b-whitespace-xl: 4 * $b-whitespace !default
-
-// ----- Colors ----- //
-
-$c-background: #f2f2f2 !default
-$c-base: #292b2f !default
-$c-error: #86341d !default
-$c-highlight: #2980b9 !default
-$c-invert: #fff !default
-$c-light: #f2f2f2 !default
-$c-subdue: #999 !default
-$c-success: #238063 !default
-$c-warning: #c18f2a !default
-
-// ----- Fonts ----- //
-
-$f-base: 'Merriweather', sans-serif !default
-$f-base-light-fontWeight: 300 !default
-$f-header: 'Oswald', sans-serif !default
-$f-header-fontWeight: bold !default
-$f-header-uppercase: true !default
-$f-mono: Courier, monospace !default
 
 // ----- Breakpoint ----- //
 
-$breakpoint-large: 1400px !default
+$breakpoint-l: 1400px !default
+
+// ----- Structures ----- //
+
+// Progress
+
+$progress-background: rgba(#000, 0.75) !default
+
+// Slide
+
+$slide-background: $c-light !default
+$slide-color: $c-text !default
+
+$slide--dark-background: $c-text !default
+$slide--dark-color: $c-text-invert !default
+
+$slide--error-background: $c-error !default
+$slide--error-color: $c-text-invert !default
+
+$slide--fade-background: $c-highlight !default
+$slide--fade-color: $c-text-invert !default
+
+$slide--fade--dark-background: #000 !default
+$slide--fade--dark-color: $c-text-invert !default
+
+$slide--fade--error-background: $c-error !default
+$slide--fade--error-color: $c-text-invert !default
+
+$slide--fade--light-background: $c-background-invert !default
+$slide--fade--light-color: $c-text !default
+
+$slide--fade--subdue-background: $c-subdue !default
+$slide--fade--subdue-color: $c-text !default
+
+$slide--fade--success-background: $c-success !default
+$slide--fade--success-color: $c-text-invert !default
+
+$slide--fade--warning-background: $c-warning !default
+$slide--fade--warning-color: $c-text-invert !default
+
+$slide--light-background: $c-background-invert !default
+$slide--light-color: $c-text !default
+
+$slide--subdue-background: $c-subdue !default
+$slide--subdue-color: $c-text !default
+
+$slide--success-background: $c-success !default
+$slide--success-color: $c-text-invert !default
+
+$slide--title-background: $c-highlight !default
+$slide--title-color: $c-text-invert !default
+
+$slide--video-background: #000 !default
+$slide--video-color: $c-text-invert !default
+
+$slide--warning-background: $c-warning !default
+$slide--warning-color: $c-text-invert !default
+
+// -------------------------------------
+//   Structures
+// -------------------------------------
 
 // ----- Progress ----- //
 
-$progress-background: rgba(#000, 0.75) !default
 $progress-height: 4px !default
 
 // ----- Slide ----- //
-
-// Colors
-
-$slide-background: $c-light !default
-$slide-color: $c-base !default
-
-$slide--dark-background: $c-base !default
-$slide--dark-color: $c-invert !default
-
-$slide--error-background: $c-error !default
-$slide--error-color: $c-invert !default
-
-$slide--fade-background: $c-highlight !default
-$slide--fade-color: $c-invert !default
-
-$slide--fade--dark-background: #000 !default
-$slide--fade--dark-color: $c-invert !default
-
-$slide--fade--error-background: $c-error !default
-$slide--fade--error-color: $c-invert !default
-
-$slide--fade--light-background: $c-invert !default
-$slide--fade--light-color: $c-base !default
-
-$slide--fade--subdue-background: $c-subdue !default
-$slide--fade--subdue-color: $c-base !default
-
-$slide--fade--success-background: $c-success !default
-$slide--fade--success-color: $c-invert !default
-
-$slide--fade--warning-background: $c-warning !default
-$slide--fade--warning-color: $c-invert !default
-
-$slide--light-background: $c-invert !default
-$slide--light-color: $c-base !default
-
-$slide--subdue-background: $c-subdue !default
-$slide--subdue-color: $c-base !default
-
-$slide--success-background: $c-success !default
-$slide--success-color: $c-invert !default
-
-$slide--title-background: $c-highlight !default
-$slide--title-color: $c-invert !default
-
-$slide--video-background: #000 !default
-$slide--video-color: $c-invert !default
-
-$slide--warning-background: $c-warning !default
-$slide--warning-color: $c-invert !default
-
-// Options
 
 $slide--fade-opacity: 0.75 !default
 $slide-transition: true !default

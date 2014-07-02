@@ -235,13 +235,13 @@
 .slide-content
   @extend .fauxHide
   @extend .stretch
-  margin: $b-whitespace
+  margin: $b-space
   z-index: 10
   .no-touch &
     @if $slide-transition
       +transition(all $slide-transition-speed ease-in-out)
-  +respond-to($breakpoint-large)
-    margin: $b-whitespace-l
+  +respond-to($breakpoint-l)
+    margin: $b-space-l
 
 // ----- Image ----- //
 
