@@ -1,1 +1,0 @@
-(function(){this.presenter.directive("progress",function(Progress){return{restrict:"E",replace:!0,scope:{},template:"<div class='progress'>\n\n</div>",link:function(scope,element){return Progress.registerProgress(function(val){return element.css("width",""+100*val+"%")}),scope.$on("$destroy",function(){return Progress.registerProgress(null)})}}})}).call(this);
