@@ -1,6 +1,21 @@
 Changelog
 =========
 
+0.11.0 - 2015-01-23
+-------------------
+
+### Added
+
+- Comments in `config.rb`
+
+### Removed
+
+- The `build/` directory from the repo
+
+### Fixed
+
+- Nothing
+
 0.10.7 - 2014-07-14
 -------------------
 
