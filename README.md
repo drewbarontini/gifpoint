@@ -6,8 +6,7 @@ Middleman, Angular-powered HTML slides that make it super easy to add full-scree
 Setup
 -----
 
-First, we need to install `bundler`, `bundle`, and then start the Middleman
-server.
+First, we need to install `bundler`, `bundle`, and then start the Middleman server.
 
 ```bash
 gem install bundler
@@ -46,8 +45,7 @@ To set the page title, open up `config.rg` and change the `page_title`.
 Creating Slides
 ---------------
 
-All of the slides are in `source/index.haml`. They are written as Angular
-directives in Haml.
+All of the slides are in `source/index.haml`. They are written as Angular directives in Haml.
 
 Here are some different slide types you can use:
 
@@ -376,4 +374,3 @@ If you want to alter the design/settings of the application, open up `sourse/ass
 - Progress bar `height` and `background-color`
 - All slide type colors (which generally pull from the base color variables) 
 - Slide options for transition `delay`, `speed`, etc.
-
