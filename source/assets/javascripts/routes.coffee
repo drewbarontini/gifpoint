@@ -1,3 +1,9 @@
+# *************************************
+#
+#   Routes
+#
+# *************************************
+
 @presenter.config ($stateProvider) ->
 
   $stateProvider.state 'root',

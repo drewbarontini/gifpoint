@@ -1,18 +1,37 @@
-@presenter.directive 'progress', (Progress) ->
-  restrict: 'E'
-  replace: true
-  scope: {}
+# *************************************
+#
+#   Progress Directive
+#
+# *************************************
 
-  template: """
+@presenter.directive 'progress', ( Progress ) ->
+
+  # -------------------------------------
+  #   Properties
+  # -------------------------------------
+
+  restrict : 'E'
+  replace  : true
+  scope    : {}
+
+  # -------------------------------------
+  #   Template
+  # -------------------------------------
+
+  template : """
     <div class='progress'>
 
     </div>
   """
 
-  link: (scope, element, attrs) ->
+  # -------------------------------------
+  #   Link
+  # -------------------------------------
 
-    Progress.registerProgress (val) ->
-      element.css('width', "#{val * 100}%")
+  link : ( scope, element, attrs ) ->
+
+    Progress.registerProgress ( value ) ->
+      element.css( 'width', "#{ value * 100 }%" )
 
     scope.$on '$destroy', () ->
-      Progress.registerProgress(null)
+      Progress.registerProgress( null )

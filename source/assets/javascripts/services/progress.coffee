@@ -1,8 +1,22 @@
+# *************************************
+#
+#   Progress Service
+#
+# *************************************
+
 @presenter.factory 'Progress', () ->
 
-  registerProgress: (cb) =>
-    @progressCallback = cb
+  # -------------------------------------
+  #   Register Progress
+  # -------------------------------------
 
-  update: (num) =>
-    @progressCallback(num)
+  registerProgress: ( callback ) =>
+    @progressCallback = callback
+
+  # -------------------------------------
+  #   Update
+  # -------------------------------------
+
+  update: ( number ) =>
+    @progressCallback( number )
 

@@ -1,2 +1,7 @@
-@presenter = angular.module('Presenter', ['ui.router', 'ngTouch'])
+# *************************************
+#
+#   Namespace
+#
+# *************************************
 
+@presenter = angular.module('Presenter', ['ui.router', 'ngTouch'])

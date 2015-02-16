@@ -1,12 +1,31 @@
-@presenter.directive 'slideLoader', ($timeout) ->
-  restrict: 'E'
-  replace: true
-  scope: {}
+# *************************************
+#
+#   Slide Loader Directive
+#
+# *************************************
 
-  template: """
+@presenter.directive 'slideLoader', ( $timeout ) ->
+
+  # -------------------------------------
+  #   Properties
+  # -------------------------------------
+
+  restrict : 'E'
+  replace  : true
+  scope    : {}
+
+  # -------------------------------------
+  #   Template
+  # -------------------------------------
+
+  template : """
     <div ng-include='indexTemplate'></div>
   """
 
-  link: (scope, element, attrs) ->
+  # -------------------------------------
+  #   Link
+  # -------------------------------------
+
+  link : ( scope, element, attrs ) ->
     $timeout ->
       scope.indexTemplate = 'index'
