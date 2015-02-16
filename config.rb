@@ -9,6 +9,11 @@ activate :directory_indexes
 activate :livereload
 activate :syntax
 
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 10']
+  config.cascade = false
+end
+
 # ====================================
 #   Global Variables
 # ====================================
