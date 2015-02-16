@@ -15,6 +15,7 @@ html
 body
   font-size: 100%
   overflow: hidden
+
   +respond-to(100em)
     font-size: 150%
 
@@ -29,6 +30,7 @@ ul, p
 li
   margin-bottom: $b-space-s
   margin-top: 0
+
   &:last-child
     margin-bottom: 0
 
@@ -39,11 +41,14 @@ blockquote
   font-size: $b-fontSize-xl
   font-weight: $b-fontFamily-light-fontWeight
   margin: 0
+
   &::before,
   &::after
     display: inline
+
   &::before
     content: open-quote
+
   &::after
     content: close-quote
 
@@ -59,6 +64,7 @@ h4, .h4
   font-weight: $b-fontFamily-heading-fontWeight
   line-height: 1.5
   margin-top: 0
+
   > b
     display: block
 
@@ -66,6 +72,7 @@ h1, .h1
   line-height: 1.2
   font-family: $b-fontFamily-heading
   font-size: $b-fontSize-h1
+
   @if $b-fontFamily-heading-uppercase
     text-transform: uppercase
 
@@ -86,6 +93,7 @@ h4, .h4
 a
   color: $c-highlight
   text-decoration: none
+
   &:hover,
   &:focus
     color: $c-subdue

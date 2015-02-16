@@ -18,6 +18,7 @@
   overflow: hidden
   width: 100%
   z-index: 10
+
   .no-touch &
     @if $slide-transition
       +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
@@ -47,6 +48,7 @@
 
 .slide--fade
   color: $slide--fade-color
+
   &::after
     @extend .stretch
     background: $slide--fade-background
@@ -58,6 +60,7 @@
 
 .slide--fade--dark
   color: $slide--fade--dark-color
+
   &::after
     background-color: $slide--fade--dark-background
 
@@ -65,6 +68,7 @@
 
 .slide--fade--error
   color: $slide--fade--error-color
+
   &::after
     background-color: $slide--fade--error-background
 
@@ -72,6 +76,7 @@
 
 .slide--fade--light
   color: $slide--fade--light-color
+
   &::after
     background-color: $slide--fade--light-background
 
@@ -79,6 +84,7 @@
 
 .slide--fade--subdue
   color: $slide--fade--subdue-color
+
   &::after
     background-color: $slide--fade--subdue-background
 
@@ -86,6 +92,7 @@
 
 .slide--fade--success
   color: $slide--fade--success-color
+
   &::after
     background-color: $slide--fade--success-background
 
@@ -93,6 +100,7 @@
 
 .slide--fade--warning
   color: $slide--fade--warning-color
+
   &::after
     background-color: $slide--fade--warning-background
 
@@ -112,6 +120,7 @@
 .slide--scale
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(scale(0.5))
@@ -146,6 +155,7 @@
 .slide--translateX
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(translateX(50%))
@@ -155,6 +165,7 @@
 .slide--translateY
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(translateY(50%))
@@ -180,12 +191,14 @@
 .slide.is-active
   @extend .fauxShow
   overflow: hidden
+
   .no-touch &
     @if $slide-transition
       +transition(all $slide-transition-speed ease-in-out)
 
   .slide-content
     @extend .fauxShow
+
     .no-touch &
       @if $slide-transition
         +transition(all $slide-transition-speed $slide-transition-delay ease-in-out)
@@ -195,6 +208,7 @@
 .slide--scale.is-active
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(scale(1))
@@ -204,6 +218,7 @@
 .slide--translateX.is-active
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(translateX(0))
@@ -213,6 +228,7 @@
 .slide--translateY.is-active
 
   .slide-content
+
     .no-touch &
       @if $slide-transition
         +transform(translateY(0))
@@ -237,9 +253,11 @@
   @extend .stretch
   margin: $b-space
   z-index: 10
+
   .no-touch &
     @if $slide-transition
       +transition(all $slide-transition-speed ease-in-out)
+
   +respond-to($breakpoint-l)
     margin: $b-space-l
 
@@ -268,6 +286,7 @@
   margin: 0 auto
   padding-bottom: 56.25%
   position: relative
+
   > iframe
     height: 100%
     left: 0

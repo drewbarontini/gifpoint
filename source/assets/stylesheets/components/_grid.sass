@@ -10,10 +10,12 @@
 // -------------------------------------
 //
 // .g
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
-//   .g-b[.g-b--center|1of2|1of3|...]
+//
+//   .g-b[center 1of2|...]
+//     / ...
+//
+//   .g-b[center 1of2|...]
+//     / ...
 //
 // *************************************
 
@@ -28,7 +30,6 @@
   margin-right: -$g-gutter / 2
 
 #{$g-selector}g-b
-  -moz-box-sizing: border-box
   box-sizing: border-box
   float: left
   margin: 0
@@ -51,7 +52,7 @@
 //   Setup
 // -------------------------------------
 
-=device-type($namespace: '')
+=g-device-type($namespace: '')
 
   // ----- One Part ----- //
 
@@ -177,9 +178,8 @@
 //   Creation
 // -------------------------------------
 
-+device-type()
++g-device-type()
 
 @each $device in $g-defaults
   @media screen and (min-width: nth($device, 2))
-    +device-type("#{nth($device, 1)}--")
-
+    +g-device-type("#{nth($device, 1)}--")

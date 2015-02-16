@@ -3,6 +3,13 @@
 //   Card
 //   -> Individual style containers
 //
+// -------------------------------------
+//   Template (Haml)
+// -------------------------------------
+//
+// .card[xs|s dark]
+//   / ...
+//
 // *************************************
 
 .card
@@ -16,11 +23,6 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Dark ----- //
-
-.card--dark
-  background: rgba(#000, 0.75)
-
 // ----- Sizes ----- //
 
 .card--xs
@@ -29,3 +31,7 @@
 .card--s
   padding: $b-space-s
 
+// ----- Theme ----- //
+
+.card--dark
+  background: rgba(#000, 0.75)
