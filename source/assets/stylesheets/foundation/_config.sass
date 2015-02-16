@@ -134,10 +134,10 @@ $b-textShadow: 6px 6px 0 rgba(#000, 0.25), 12px 12px 0 rgba(#000, 0.1) !default
 $b-minWidth: em(400px) !default
 $b-maxWidth: em(680px)default
 $b-space: em(40px) !default
-$b-space-xs: 0.25 * $b-space !default
-$b-space-s: 0.5 * $b-space !default
-$b-space-l: 2 * $b-space !default
-$b-space-xl: 4 * $b-space !default
+$b-space-xs: $b-space * 0.25 !default
+$b-space-s: $b-space * 0.5 !default
+$b-space-l: $b-space * 2 !default
+$b-space-xl: $b-space * 4 !default
 
 // ----- Settings ----- //
 
@@ -184,4 +184,3 @@ $slide--fade-opacity: 0.75 !default
 $slide-transition: true !default
 $slide-transition-delay: 0.2s !default
 $slide-transition-speed: 0.4s !default
-
