@@ -1,6 +1,24 @@
 Changelog
 =========
 
+1.0.0 - 2015-02-16
+------------------
+
+### Added
+
+- Autoprefixer
+
+### Removed
+
+- Unnecessary mixins and extends
+
+### Fixed
+
+- Update Middleman to 3.3.8
+- Update MVCSS to 4.0.8
+- Use glob importing in application.sass
+- Update JavaScript organization
+
 0.11.0 - 2015-01-23
 -------------------
 
