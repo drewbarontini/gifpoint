@@ -25,43 +25,6 @@
 //   Mixins
 // -------------------------------------
 
-// ----- Animation ----- //
-// -> Auto-prefixed animation properties
-//
-// $args - the animation arguments
-//
-
-=animation($args)
-  -webkit-animation: $args
-  animation: $args
-
-// ----- Keyframe Animation ----- //
-// -> Auto-prefixed keyframe-animation
-//
-// $name - the name of the animation
-// @content - the generated content within the mixin
-//
-
-=keyframe-animation($name)
-  @-webkit-keyframes #{$name}
-    @content
-  @-moz-keyframes #{$name}
-    @content
-  @keyframes #{$name}
-    @content
-
-// ----- Linear Gradient ----- //
-// -> Auto-prefixed linear-gradient properties (with fallback)
-//
-// $first - the first color stop (also, fallback color)
-// $second - the second color stop
-//
-
-=linear-gradient($first, $second)
-  background-image: -webkit-linear-gradient($first, $second)
-  background-image: linear-gradient($first, $second)
-  background-color: $first
-
 // ----- Respond-to ----- //
 // -> Generates a media query
 //
@@ -74,38 +37,6 @@
 =respond-to($val, $query: min-width, $media: screen)
   @media #{$media} and ($query: $val)
     @content
-
-// ----- Transform ----- //
-// -> Auto-prefixed transform properties
-//
-// $args - a variable number of transform values
-//
-
-=transform($args...)
-  -webkit-transform: $args
-  -moz-transform: $args
-  -ms-transform: $args
-  transform: $args
-
-// ----- Transition ----- //
-// -> Auto-prefixed transition properties
-//
-// $args - a variable number of transition values
-//
-
-=transition($args...)
-  -webkit-transition: $args
-  transition: $args
-
-// ----- Transition Transform ----- //
-// -> Auto-prefixed transition properties (for transforms)
-//
-// $args - a variable number of transform values
-//
-
-=transition-transform($args...)
-  -webkit-transition: -webkit-transform $args
-  transition: transform $args
 
 // -------------------------------------
 //   Extends
@@ -186,10 +117,10 @@
 // ----- Middle ----- //
 
 .middle
-  +transform(translate(-50%, -50%))
   left: 50%
   position: absolute
   top: 50%
+  transform: translate(-50%, -50%)
   width: 100%
 
 // Auto
@@ -205,7 +136,7 @@
 // ----- No Transition ----- //
 
 .noTransition
-  +transition(none)
+  transition: none
 
 // ----- Right ----- //
 
@@ -226,7 +157,6 @@
 // ----- Valign ----- //
 
 .valign
-  +transform(translateY(-50%))
   position: absolute
   top: 50%
-
+  transform: translateY(-50%)
