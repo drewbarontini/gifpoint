@@ -40,7 +40,7 @@ Go to `localhost:4567/#/` and you should see the first slide.
 Set Page Title
 --------------
 
-To set the page title, open up `config.rg` and change the `page_title`.
+To set the page title, open up `config.rb` and change the `page_title`.
 
 Creating Slides
 ---------------
@@ -361,7 +361,7 @@ By default, no elements have any `margin` or `padding` to  keep the vertical ali
 
 `mbxs` stands for `margin-bottom` `extra-small`, and there are variants for extra-small `xs`, small `s`, medium `m`, large `l`, and extra-large `xl`, for both `margin` and `padding`.
 
-There are other various single-property classes in `source/assets/stylesheets/foundation/_utilities.sass` that you can peruse.
+There are other various single-property classes in `source/assets/stylesheets/foundation/_tools.sass` that you can peruse.
 
 Changing Settings
 -----------------
