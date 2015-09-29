@@ -1,0 +1,1 @@
+(function(){this.presenter.factory("Progress",function(){return{registerProgress:function(_this){return function(callback){return _this.progressCallback=callback}}(this),update:function(_this){return function(number){return _this.progressCallback(number)}}(this)}})}).call(this);

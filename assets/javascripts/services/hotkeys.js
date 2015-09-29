@@ -1,0 +1,1 @@
+(function(){this.presenter.factory("Hotkeys",function($document){return{keys:{left:37,right:39,space:32,escape:27,s:83},register:function(){return function(key,callback){return $document.keydown(function(event){switch(event.which){case key:return callback()}})}}(this),off:function(){return function(){return $document.off}}(this)}})}).call(this);

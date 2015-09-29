@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='Presenter'>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+    <title>GIFPoint</title>
+    <link href="assets/stylesheets/application.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class='index'>
+    <progress></progress>
+    <script id='index' type='text/ng-template'>
+      <slides>
+        <slide class='slide--title' section>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>GIFPoint</h1>
+              <p class='oph'>Drew Barontini &mdash; @drewbarontini</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--translateX'>
+          <div class='slide-content'>
+            <div class='middle middle--lrg tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is standard slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue slide--translateY'>
+          <div class='slide-content'>
+            <div class='middle middle--lrg tac'>
+              <h1 class='mbxs tci tsa'>Cool Slide Title</h1>
+              <p class='tci'>It has a shadow and stuff!</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--light' section>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Light</h1>
+              <p>This is a light slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--dark'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Dark</h1>
+              <p>This is a dark slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--subdue'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Subdued</h1>
+              <p>This is a subdued slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--success'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Success</h1>
+              <p>This is a success slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--error'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Error</h1>
+              <p>This is an error slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--warning'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Warning</h1>
+              <p>This is a warning slide.</p>
+            </div>
+          </div>
+        </slide>
+        <slide section>
+          <div class='slide-content'>
+            <h1 class='mbxs'>List of Things</h1>
+            <ul>
+              <li>One thing</li>
+              <li>Here's another thing</li>
+              <li>And another</li>
+            </ul>
+          </div>
+        </slide>
+        <slide class='noTransition'>
+          <div class='slide-content'>
+            <h1 class='mbxs'>List of Things</h1>
+            <div class='g'>
+              <div class='g-b g-b--1of2'>
+                <ul>
+                  <li>One thing</li>
+                  <li>Here's another thing</li>
+                  <li>And another</li>
+                </ul>
+              </div>
+              <div class='g-b g-b--1of2'>
+                <ul>
+                  <li>Oh man! Another thing</li>
+                  <li>Here's another thing</li>
+                  <li>And, finally, another</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--scale' section>
+          <div class='slide-content'>
+            <div class='middle middle--lrg tac'>
+              <img alt="Placeholder" class="slide-media" src="http://placehold.it/800x400" />
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--translateY slide--video'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <div class='slide-video'>
+                <yt-video height='720' video-src='xZY43QSx3Fk' width='1280'></yt-video>
+              </div>
+            </div>
+          </div>
+        </slide>
+        <slide section>
+          <div class='slide-content'>
+            <div class='middle middle--auto'>
+              <pre class="highlight sass">&#x000A;<span class="c1">// *************************************&#x000A;//&#x000A;//   Card&#x000A;//   -&gt; Individual style containers&#x000A;//&#x000A;// *************************************&#x000A;</span>&#x000A;<span class="nc">.card</span>&#x000A;  <span class="k">@extend</span> <span class="nc">.bci</span>&#x000A;  <span class="k">@extend</span> <span class="nc">.por</span>&#x000A;  <span class="k">@extend</span> <span class="nc">.ram</span>&#x000A;  <span class="nl">padding</span><span class="p">:</span> <span class="nv">$b-whitespace</span>&#x000A;</pre>
+            </div>
+          </div>
+        </slide>
+        <slide section>
+          <div class='slide-content'>
+            <div class='bottom'>
+              <blockquote class='mbxs'>
+                What would happen if I put some longer, more thought-provoking text
+                here that fills up more space?
+              </blockquote>
+              <p>&mdash; Drew Barontini</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg' section>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--dark' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, dark background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--light' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, light background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--subdue' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, subdued background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--success' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, success background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--error' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, error background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--warning' img='http://farm6.staticflickr.com/5504/9661002213_5b4eb66f86_o.jpg'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <h1 class='mbxs'>Slide Title</h1>
+              <p>This is a faded, warning background image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--dark' img='http://gificiency.com/m/angry-batman.gif' section>
+          <div class='slide-content'>
+            <div class='bottom'>
+              <h1>GIF</h1>
+              <p>A fullscreen GIF image.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--error' img='http://gificiency.com/m/angry-batman.gif'>
+          <div class='slide-content'>
+            <div class='bottom'>
+              <h1>GIF</h1>
+              <p>A fullscreen GIF image with fade.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--light' img='http://gificiency.com/m/dance-abed.gif'>
+          <div class='slide-content'>
+            <div class='middle middle--med tac'>
+              <h1 class='mbxs'>GIF</h1>
+              <p>This is some more description text.</p>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--dark slide--tile' img='http://gificiency.com/m/what-bored.gif'>
+          <div class='slide-content'>
+            <div class='middle tac'>
+              <div class='card card--dark'>
+                <h1>Slide Title</h1>
+                <p>A fullscreen, tiled GIF image.</p>
+              </div>
+            </div>
+          </div>
+        </slide>
+        <slide class='slide--fade slide--fade--dark' img='http://gificiency.com/m/happy-hulk.gif'>
+          <div class='slide-content'>
+            <h1 class='mbxs'>GIF</h1>
+            <p>This is some more description text.</p>
+          </div>
+        </slide>
+        <slide img='http://gificiency.com/m/excited-parks.gif'>
+          <div class='slide-content'>
+            <div class='bottom full tac'>
+              <div class='card'>
+                <p><a href="http://github.com/drewbarontini/gifpoint">http://github.com/drewbarontini/gifpoint</a></p>
+              </div>
+            </div>
+          </div>
+        </slide>
+      </slides>
+    </script>
+    <div ui-view></div>
+    <script src="assets/javascripts/vendor.js" type="text/javascript"></script>
+    <script src="assets/javascripts/application.js" type="text/javascript"></script>
+  </body>
+</html>
