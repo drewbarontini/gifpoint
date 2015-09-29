@@ -30,6 +30,10 @@
 #= require directives/slide
 #= require directives/ytVideo
 
+# -------------------------------------
+#   Document Ready
+# -------------------------------------
+
 jQuery ($) ->
   if window.location.hash is ''
     window.location = '/#/'
