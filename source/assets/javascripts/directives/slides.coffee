@@ -92,7 +92,7 @@
     # ----- Set Location ----- #
 
     @setLocation = =>
-      $state.go( 'root', { index: $scope.currentSlide } )
+      $state.go( 'root', { index: $scope.currentSlide }, { notify: false } )
       $location.path( "/#{ $scope.currentSlide }" )
       @updateProgress()
       return
