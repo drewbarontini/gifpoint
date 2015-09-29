@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.3 - 2015-09-29
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Switched to viewport units for font sizing
+
 1.0.2 - 2015-09-29
 ------------------
 
