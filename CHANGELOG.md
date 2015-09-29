@@ -1,6 +1,22 @@
 Changelog
 =========
 
+1.0.1 - 2015-09-29
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Updated `angular-ui-router` to `0.2.15`
+- Fixed a bug causing page refresh on slide change
+
 1.0.0 - 2015-02-16
 ------------------
 
