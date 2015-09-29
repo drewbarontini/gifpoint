@@ -29,3 +29,7 @@
 #= require directives/slides
 #= require directives/slide
 #= require directives/ytVideo
+
+jQuery ($) ->
+  if window.location.hash is ''
+    window.location = '/#/'
