@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.4 - 2015-09-30
+------------------
+
+### Added
+
+- `slide-highlight` and `slide-underline` styles
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Nothing
+
 1.0.3 - 2015-09-29
 ------------------
 
