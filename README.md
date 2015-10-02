@@ -68,6 +68,11 @@ Here are some different slide types you can use:
   .slide-content
     .middle.tac
       = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-media'
+
+%slide
+  .slide-content
+    .middle.tac
+      = image_tag 'http://placehold.it/800x400', alt: 'Placeholder', class: 'slide-img'
 ```
 
 ### Colors
