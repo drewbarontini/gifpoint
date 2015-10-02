@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.5 - 2015-10-02
+------------------
+
+### Added
+
+- Nothing
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- Update `slide-img` styles
+
 1.0.4 - 2015-09-30
 ------------------
 
