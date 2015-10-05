@@ -36,4 +36,4 @@
 
 jQuery ($) ->
   if window.location.hash is ''
-    window.location = '/#/'
+    window.location.href = "#{ window.location.pathname }#/"
