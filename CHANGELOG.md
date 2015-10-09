@@ -1,6 +1,21 @@
 Changelog
 =========
 
+1.0.7 - 2015-10-09
+------------------
+
+### Added
+
+- `op1of4` tool class
+
+### Removed
+
+- Nothing
+
+### Fixed
+
+- `opacity` tool classes
+
 1.0.6 - 2015-10-05
 ------------------
 
